@@ -324,14 +324,14 @@ config:
         alter schema _realtime owner to :pguser;
     - filePath: /volumes/db/roles.sql
       content: |
-      -- NOTE: change to your own passwords for production environments
-      \\set pgpass \`echo "$POSTGRES_PASSWORD"\`
+        -- NOTE: change to your own passwords for production environments
+        \set pgpass '$(echo "$POSTGRES_PASSWORD")'
 
-      ALTER USER authenticator WITH PASSWORD :'pgpass';
-      ALTER USER pgbouncer WITH PASSWORD :'pgpass';
-      ALTER USER supabase_auth_admin WITH PASSWORD :'pgpass';
-      ALTER USER supabase_functions_admin WITH PASSWORD :'pgpass';
-      ALTER USER supabase_storage_admin WITH PASSWORD :'pgpass';
+        ALTER USER authenticator WITH PASSWORD :'pgpass';
+        ALTER USER pgbouncer WITH PASSWORD :'pgpass';
+        ALTER USER supabase_auth_admin WITH PASSWORD :'pgpass';
+        ALTER USER supabase_functions_admin WITH PASSWORD :'pgpass';
+        ALTER USER supabase_storage_admin WITH PASSWORD :'pgpass';
     - filePath: /volumes/db/webhooks.sql
       content: |
         BEGIN;

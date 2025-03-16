@@ -10,7 +10,7 @@ jobs:
     name: Build Preview Site and Upload Build Artifact
     permissions:
       contents: read
-      actions: read
+      actions: write
       pull-requests: write
     steps:
       - name: Checkout
@@ -34,9 +34,15 @@ jobs:
         working-directory: app
         run: pnpm build
 
+      - name: List build output
+        run: ls -la app/dist
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: preview-build
           path: app/dist
-          retention-days: 1 
+          retention-days: 1
+          
+      - name: Verify artifact upload
+        run: echo "Artifact upload completed with ID ${{ steps.upload-artifact.step.outputs.artifact-id }}" 

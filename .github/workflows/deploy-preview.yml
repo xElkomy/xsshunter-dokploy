@@ -5,11 +5,9 @@ on:
     workflows: ['Build Preview Deployment']
     types:
       - completed
-    branches-ignore:
-      - main
 
 permissions:
-  actions: read
+  actions: write
   deployments: write
   contents: read
   pull-requests: write
@@ -19,17 +17,29 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request'
+      github.event.workflow_run.head_repository.full_name == github.repository
     name: Deploy Preview to Cloudflare Pages
     steps:
-      - name: Download artifact
+      - name: Debug Info
+        env:
+          EVENT_JSON: ${{ toJSON(github.event) }}
+        run: |
+          echo "Workflow Run ID: ${{ github.event.workflow_run.id }}"
+          echo "Event Type: ${{ github.event.workflow_run.event }}"
+          echo "Repository: ${{ github.event.workflow_run.head_repository.full_name }}"
+          echo "Full Event: $EVENT_JSON"
+
+      - name: Download artifacts
         uses: dawidd6/action-download-artifact@v3
         with:
-          workflow: build-preview.yml
+          workflow: Build Preview Deployment
+          run_id: ${{ github.event.workflow_run.id }}
           name: preview-build
           path: build
-          run_id: ${{ github.event.workflow_run.id }}
-          if_no_artifact_found: error
+          search_artifacts: true
+
+      - name: List files
+        run: ls -la build
 
       - name: Deploy to Cloudflare Pages
         uses: AdrianGonz97/refined-cf-pages-action@v1

@@ -38,6 +38,7 @@ jobs:
         run: ls -la app/dist
 
       - name: Upload build artifact
+        id: upload-artifact
         uses: actions/upload-artifact@v4
         with:
           name: preview-build
@@ -45,4 +46,7 @@ jobs:
           retention-days: 1
           
       - name: Verify artifact upload
-        run: echo "Artifact upload completed with ID ${{ steps.upload-artifact.step.outputs.artifact-id }}" 
+        run: |
+          echo "Artifact upload completed"
+          echo "Workflow ID: ${{ github.run_id }}"
+          echo "Repository: ${{ github.repository }}" 

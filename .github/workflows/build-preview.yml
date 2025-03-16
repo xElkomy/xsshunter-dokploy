@@ -1,0 +1,65 @@
+name: "Build and Deploy Preview"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy Preview
+    permissions:
+      contents: read
+      actions: write
+      pull-requests: write
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        working-directory: app
+        run: pnpm install
+
+      - name: Build
+        working-directory: app
+        run: pnpm build
+
+      - name: List build output
+        run: ls -la app/dist
+
+      - name: Deploy to Cloudflare Pages
+        uses: AdrianGonz97/refined-cf-pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          deploymentName: Preview
+          directory: app/dist
+
+      - name: Upload build artifact
+        id: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-build
+          path: app/dist
+          retention-days: 1
+          
+      - name: Verify artifact upload
+        run: |
+          echo "Artifact upload completed"
+          echo "Workflow ID: ${{ github.run_id }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event type: ${{ github.event.action }}" 

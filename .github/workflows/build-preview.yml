@@ -42,4 +42,3 @@ jobs:
         with:
           name: preview-build
           path: app/dist
-          There is an internal issue with your Cloudflare Pages Git installation. If this issue persists after reinstalling your installation, contact support: https://cfl.re/3WgEyrH.

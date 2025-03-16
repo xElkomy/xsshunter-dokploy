@@ -107,7 +107,7 @@ const Search = () => {
             <PopoverContent className="w-[200px] p-0">
               <Command shouldFilter={false}>
                 <CommandInput
-                  placeholder="Search tags..."
+                  placeholder="Search tags...."
                   value={tagSearch}
                   onValueChange={setTagSearch}
                 />

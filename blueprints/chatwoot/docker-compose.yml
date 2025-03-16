@@ -23,8 +23,6 @@ x-base-config: &base-config
     - REDIS_URL=${REDIS_URL}
     - ENABLE_ACCOUNT_SIGNUP=${ENABLE_ACCOUNT_SIGNUP}
     - ACTIVE_STORAGE_SERVICE=${ACTIVE_STORAGE_SERVICE}
-  labels:
-    - "traefik.enable=true"
 
 services:
   chatwoot-rails:
@@ -37,11 +35,6 @@ services:
     entrypoint: docker/entrypoints/rails.sh
     command: ['bundle', 'exec', 'sh', '-c', 'rails db:chatwoot_prepare && rails s -p 3000 -b 0.0.0.0']
     restart: always
-    labels:
-      - "traefik.http.routers.chatwoot-web.rule=Host(`${FRONTEND_URL_HOST}`)"
-      - "traefik.http.routers.chatwoot-web.entrypoints=websecure"
-      - "traefik.http.routers.chatwoot-web.tls.certresolver=letsencrypt"
-      - "traefik.http.services.chatwoot-web-service.loadbalancer.server.port=3000"
 
   chatwoot-sidekiq:
     <<: *base-config
@@ -63,16 +56,12 @@ services:
       - POSTGRES_DB=${POSTGRES_DATABASE}
       - POSTGRES_USER=${POSTGRES_USERNAME}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    networks:
-      - dokploy-network
 
   chatwoot-redis:
     image: redis:alpine
     restart: always
     volumes:
       - chatwoot-redis-data:/data
-    networks:
-      - dokploy-network
 
 networks:
   dokploy-network:

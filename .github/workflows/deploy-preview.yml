@@ -5,6 +5,8 @@ on:
     workflows: ['Build Preview Deployment']
     types:
       - completed
+    branches-ignore:
+      - main
 
 permissions:
   actions: read
@@ -15,17 +17,19 @@ permissions:
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: |
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
     name: Deploy Preview to Cloudflare Pages
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        id: preview-build-artifact
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v3
         with:
+          workflow: build-preview.yml
           name: preview-build
           path: build
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ github.event.workflow_run.id }}
+          run_id: ${{ github.event.workflow_run.id }}
+          if_no_artifact_found: error
 
       - name: Deploy to Cloudflare Pages
         uses: AdrianGonz97/refined-cf-pages-action@v1
@@ -35,4 +39,4 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
           deploymentName: Preview
-          directory: ${{ steps.preview-build-artifact.outputs.download-path }} 
+          directory: build 

@@ -1837,7 +1837,7 @@
       "links": {
         "github": "https://github.com/lowcoder-org/lowcoder",
         "website": "https://www.lowcoder.cloud/",
-        "docs": "https://docs.lowcoder.cloud/lowcoder-documentation",
+        "docs": "https://docs.lowcoder.cloud/lowcoder-documentation"
       },
       "tags": ["low-code", "no-code", "development"]
     }

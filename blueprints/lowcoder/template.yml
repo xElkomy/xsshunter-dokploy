@@ -11,7 +11,7 @@ config:
       host: ${main_domain}
 
   env:
-    ENABLE_USER_SIGN_UP: false
+    ENABLE_USER_SIGN_UP: "false"
     ENCRYPTION_PASSWORD: ${encryption_password}
     ENCRYPTION_SALT: ${encryption_salt}
     CORS_ALLOWED_DOMAINS: "*"

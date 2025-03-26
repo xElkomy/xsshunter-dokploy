@@ -11,11 +11,11 @@ services:
       - XDG_CACHE_HOME=/cache # backup cache
       - TZ=${TZ}
     volumes:
-      - backrest/data:/data
-      - backrest/config:/config
+      - backrest:/data
+      - backrest:/config
       - backrest-cache:/cache # to preserve backup cache between restarts
       - /:/userdata:ro # we mount /mnt/data to /userdata (that we want to backup)
 
 volumes:
-  - backrest: {}
-  - backrest-cache: {}
+  backrest: 
+  backrest-cache: 

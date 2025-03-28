@@ -2,6 +2,8 @@ variables:
   main_domain: ${domain}
   postgres_password: ${password:16}
   nextauth_secret: ${password:32}
+  nextauth_url: https://${main_domain}
+  next_public_base_url: https://${main_domain}
 
 config:
   domains:
@@ -10,7 +12,9 @@ config:
       host: ${main_domain}
   
   env:
-    - NEXTAUTH_URL=https://${main_domain}
-    - NEXT_PUBLIC_BASE_URL=https://${main_domain}
+    - nextauth_secret=${nextauth_secret}
+    - postgres_password=${postgres_password}
+    - nextauth_url=${nextauth_url}
+    - next_public_base_url=${next_public_base_url}
   
   mounts: []

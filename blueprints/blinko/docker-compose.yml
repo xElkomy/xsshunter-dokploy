@@ -8,6 +8,8 @@ services:
       NODE_ENV: production
       NEXTAUTH_SECRET: ${nextauth_secret}
       DATABASE_URL: postgresql://postgres:${postgres_password}@blinko-postgres:5432/postgres
+      NEXTAUTH_URL: ${nextauth_url}
+      NEXT_PUBLIC_BASE_URL: ${next_public_base_url}
     depends_on:
       blinko-postgres:
         condition: service_healthy
@@ -16,6 +18,8 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+    ports:
+      - 1111:1111
     healthcheck:
       test: ["CMD", "curl", "-f", "http://blinko-website:1111/"]
       interval: 30s 

@@ -1,0 +1,16 @@
+variables:
+  main_domain: ${domain}
+  postgres_password: ${password:16}
+  nextauth_secret: ${password:32}
+
+config:
+  domains:
+    - serviceName: blinko-website
+      port: 1111
+      host: ${main_domain}
+  
+  env:
+    - NEXTAUTH_URL=https://${main_domain}
+    - NEXT_PUBLIC_BASE_URL=https://${main_domain}
+  
+  mounts: []

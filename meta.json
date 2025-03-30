@@ -2046,5 +2046,137 @@
       "graph-database",
       "nosql"
     ]
+  },
+  {
+    "id": "anonupload",
+    "name": "AnonUpload",
+    "version": "1",
+    "description": "AnonUpload is a secure, anonymous file sharing application that does not require a database. It is built with privacy as a priority, ensuring that the direct filename used is not displayed.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/supernova3339/anonupload",
+      "docs": "https://github.com/Supernova3339/anonupload/blob/main/env.md"
+    },
+    "tags": [
+      "file-sharing",
+      "privacy"
+    ]
+  },
+  {
+    "id": "argilla",
+    "name": "Argilla",
+    "version": "latest",
+    "description": "Argilla is a robust platform designed to help engineers and data scientists streamline the management of machine learning data workflows. It simplifies tasks like data labeling, annotation, and quality control.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/argilla-io/argilla",
+      "website": "https://www.argilla.io/",
+      "docs": "https://docs.argilla.io/"
+    },
+    "tags": [
+      "machine-learning",
+      "data-labeling",
+      "ai"
+    ]
+  },
+  {
+    "id": "audiobookshelf",
+    "name": "Audiobookshelf",
+    "version": "2.19.4",
+    "description": "Audiobookshelf is a self-hosted server designed to manage and play your audiobooks and podcasts. It works best when you have an organized directory structure.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/advplyr/audiobookshelf",
+      "website": "https://www.audiobookshelf.org",
+      "docs": "https://www.audiobookshelf.org/docs"
+    },
+    "tags": [
+      "media",
+      "audiobooks",
+      "podcasts"
+    ]
+  },
+  {
+    "id": "authorizer",
+    "name": "Authorizer",
+    "version": "1.4.4",
+    "description": "Authorizer is a powerful tool designed to simplify the process of user authentication and authorization in your applications. It allows you to build secure apps 10x faster with its low code tool and low-cost deployment.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/authorizerdev/authorizer",
+      "website": "https://authorizer.dev",
+      "docs": "https://docs.authorizer.dev/"
+    },
+    "tags": [
+      "authentication",
+      "authorization",
+      "security"
+    ]
+  },
+  {
+    "id": "automatisch",
+    "name": "Automatisch",
+    "version": "2.0",
+    "description": "Automatisch is a powerful, self-hosted workflow automation tool designed for connecting your apps and automating repetitive tasks. With Automatisch, you can create workflows to sync data, send notifications, and perform various actions seamlessly across different services.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/automatisch/automatisch",
+      "website": "https://automatisch.io/docs",
+      "docs": "https://automatisch.io/docs"
+    },
+    "tags": [
+      "automation",
+      "workflow",
+      "integration"
+    ]
+  },
+  {
+    "id": "babybuddy",
+    "name": "BabyBuddy",
+    "version": "2.7.0",
+    "description": "BabyBuddy is a comprehensive, user-friendly platform designed to help parents and caregivers manage essential details about their child's growth and development. It provides tools for tracking feedings, sleep schedules, diaper changes, and milestones.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/babybuddy/babybuddy",
+      "website": "https://babybuddy.app",
+      "docs": "https://docs.babybuddy.app"
+    },
+    "tags": [
+      "parenting",
+      "tracking",
+      "family"
+    ]
+  },
+  {
+    "id": "baikal",
+    "name": "Baikal",
+    "version": "nginx-php8.2",
+    "description": "Baikal is a lightweight, self-hosted CalDAV and CardDAV server that enables users to manage calendars and contacts efficiently. It provides a simple and effective solution for syncing and sharing events, tasks, and address books across multiple devices.",
+    "logo": "logo.png",
+    "links": {
+      "website": "https://sabre.io/baikal/",
+      "docs": "https://sabre.io/baikal/install/"
+    },
+    "tags": [
+      "calendar",
+      "contacts",
+      "caldav",
+      "carddav"
+    ]
+  },
+  {
+    "id": "barrage",
+    "name": "Barrage",
+    "version": "0.3.0",
+    "description": "Barrage is a minimalistic Deluge WebUI app with full mobile support. It features a responsive mobile-first design, allowing you to manage your torrents with ease from any device.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/maulik9898/barrage"
+    },
+    "tags": [
+      "torrents",
+      "deluge",
+      "mobile"
+    ]
   }
 ]

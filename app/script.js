@@ -22,11 +22,8 @@ function processDirectory(dirPath) {
     if (stat.isDirectory()) {
       processDirectory(filePath);
     } else if (file === "template.yml") {
-      console.log(`Converting ${filePath}`);
-      const yamlContent = fs.readFileSync(filePath, "utf8");
-      const tomlContent = convertYamlToToml(yamlContent);
-      const tomlPath = path.join(dirPath, "template.toml");
-      fs.writeFileSync(tomlPath, tomlContent);
+      console.log(`Deleting ${filePath}`);
+      fs.unlinkSync(filePath);
     }
   });
 }

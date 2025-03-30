@@ -1,7 +1,4 @@
-
-
 version: "3"
-
 
 services:
   ackee:
@@ -17,5 +14,10 @@ services:
     image: mongo:4
     environment:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
-  
+    volumes:
+      - mongo-data:/data/db
+
+
+volumes:
+  mongo-data:
      

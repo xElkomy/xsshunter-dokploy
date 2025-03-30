@@ -2,8 +2,8 @@ variables:
   main_domain: ${domain}
   postgres_password: ${password:16}
   nextauth_secret: ${password:32}
-  nextauth_url: https://${main_domain}
-  next_public_base_url: https://${main_domain}
+  nextauth_url: http://${main_domain}
+  next_public_base_url: http://${main_domain}
 
 config:
   domains:

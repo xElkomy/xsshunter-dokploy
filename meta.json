@@ -1979,5 +1979,72 @@
       "video",
       "downloader"
     ]
+  },
+  {
+    "id": "ampache",
+    "name": "Ampache",
+    "version": "latest",
+    "description": "Ampache is a web-based audio/video streaming application and file manager allowing you to access your music & videos from anywhere, using almost any internet enabled device.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/ampache/ampache",
+      "website": "http://ampache.org/",
+      "docs": "https://github.com/ampache/ampache/wiki"
+    },
+    "tags": [
+      "media",
+      "music",
+      "streaming"
+    ]
+  },
+  {
+    "id": "anythingllm",
+    "name": "AnythingLLM",
+    "version": "latest",
+    "description": "AnythingLLM is a private, self-hosted, and local document chatbot platform that allows you to chat with your documents using various LLM providers.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/Mintplex-Labs/anything-llm",
+      "website": "https://useanything.com",
+      "docs": "https://github.com/Mintplex-Labs/anything-llm/tree/master/docs"
+    },
+    "tags": [
+      "ai",
+      "llm",
+      "chatbot"
+    ]
+  },
+  {
+    "id": "apprise-api",
+    "name": "Apprise API",
+    "version": "latest",
+    "description": "Apprise API provides a simple interface for sending notifications to almost all of the most popular notification services available to us today.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/caronc/apprise-api",
+      "website": "https://github.com/caronc/apprise-api",
+      "docs": "https://github.com/caronc/apprise-api/wiki"
+    },
+    "tags": [
+      "notifications",
+      "api"
+    ]
+  },
+  {
+    "id": "arangodb",
+    "name": "ArangoDB",
+    "version": "latest",
+    "description": "ArangoDB is a native multi-model database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/arangodb/arangodb",
+      "website": "https://www.arangodb.com/",
+      "docs": "https://www.arangodb.com/docs/"
+    },
+    "tags": [
+      "database",
+      "graph-database",
+      "nosql"
+    ]
   }
 ]

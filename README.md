@@ -59,7 +59,7 @@ config:
   env: []
   mounts: [] 
 ```
-4. Add the `meta.json` file to the folder
+4. Add meta information to the `meta.json` file in the root folder
 
 ```json
 {

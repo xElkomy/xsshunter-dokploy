@@ -28,6 +28,5 @@ function processDirectory(dirPath) {
   });
 }
 
-// Ruta al directorio blueprints relativa al script
 const blueprintsPath = path.join(__dirname, "..", "blueprints");
 processDirectory(blueprintsPath);

@@ -8,7 +8,7 @@ ACKEE_MONGODB = "mongodb://mongo:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017"
 [[config.domains]]
 serviceName = "ackee"
 port = 3000
-host = "${main_domain}"
+host = "${domain}"
 
 [config.env]
 ACKEE_USERNAME = "${ACKEE_USERNAME}"

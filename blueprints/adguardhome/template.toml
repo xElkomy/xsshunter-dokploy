@@ -2,13 +2,11 @@
 main_domain = "${domain}"
 
 [config]
+env = []
+mounts = []
+
 [[config.domains]]
 serviceName = "adguardhome"
 port = 3000
 host = "${main_domain}"
 
-[config.env]
-# No specific environment variables required for basic setup
-
-[[config.mounts]]
-# Mounts are handled in docker-compose.yml through named volumes 

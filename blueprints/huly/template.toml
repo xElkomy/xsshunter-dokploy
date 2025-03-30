@@ -13,17 +13,17 @@ env = [
   "TITLE=Huly",
   "DEFAULT_LANGUAGE=en",
   "LAST_NAME_FIRST=true",
-  "SECRET=${huly_secret}"
+  "SECRET=${huly_secret}",
 ]
 
-  [[config.domains]]
-  serviceName = "nginx"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "nginx"
+port = 80
+host = "${main_domain}"
 
-  [[config.mounts]]
-  filePath = "/volumes/nginx/.huly.nginx"
-  content = """
+[[config.mounts]]
+filePath = "/volumes/nginx/.huly.nginx"
+content = """
 server {
     listen 80;
     server_name _;

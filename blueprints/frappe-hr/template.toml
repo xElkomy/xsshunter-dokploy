@@ -17,11 +17,11 @@ env = [
   "INSTALL_APP_ARGS=--install-app hrms",
   "IMAGE_NAME=ghcr.io/frappe/hrms",
   "VERSION=version-15",
-  "FRAPPE_SITE_NAME_HEADER="
+  "FRAPPE_SITE_NAME_HEADER=",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "frontend"
-  port = 8_080
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "frontend"
+port = 8_080
+host = "${main_domain}"

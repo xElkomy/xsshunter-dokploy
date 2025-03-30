@@ -2,12 +2,12 @@
 main_domain = "${domain}"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "jellyfin"
-  port = 8_096
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "jellyfin"
+port = 8_096
+host = "${main_domain}"
 
-  [config.env]
-  JELLYFIN_HOST = "${main_domain}"
+[config.env]
+JELLYFIN_HOST = "${main_domain}"

@@ -3,10 +3,10 @@ main_domain = "${domain}"
 secret_key = "${password:64}"
 
 [config]
-env = [ "SECRET_ENCRYPTION_KEY=${secret_key}" ]
-mounts = [ ]
+env = ["SECRET_ENCRYPTION_KEY=${secret_key}"]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "homarr"
-  port = 7_575
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "homarr"
+port = 7_575
+host = "${main_domain}"

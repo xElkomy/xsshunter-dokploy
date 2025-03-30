@@ -5,15 +5,15 @@ db_username = "invoiceshelf"
 db_database = "invoiceshelf"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "invoiceshelf-app"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "invoiceshelf-app"
+port = 80
+host = "${main_domain}"
 
-  [config.env]
-  INVOICESHELF_HOST = "${main_domain}"
-  DB_PASSWORD = "${db_password}"
-  DB_USERNAME = "${db_username}"
-  DB_DATABASE = "${db_database}"
+[config.env]
+INVOICESHELF_HOST = "${main_domain}"
+DB_PASSWORD = "${db_password}"
+DB_USERNAME = "${db_username}"
+DB_DATABASE = "${db_database}"

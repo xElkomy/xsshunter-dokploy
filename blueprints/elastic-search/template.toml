@@ -3,15 +3,15 @@ main_domain = "${domain}"
 api_domain = "${domain}"
 
 [config]
-env = [ ]
-mounts = [ ]
+env = []
+mounts = []
 
-  [[config.domains]]
-  serviceName = "kibana"
-  port = 5_601
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "kibana"
+port = 5_601
+host = "${main_domain}"
 
-  [[config.domains]]
-  serviceName = "elasticsearch"
-  port = 9_200
-  host = "${api_domain}"
+[[config.domains]]
+serviceName = "elasticsearch"
+port = 9_200
+host = "${api_domain}"

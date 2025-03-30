@@ -17,11 +17,11 @@ env = [
   "# Follow the guide at: https://discordtickets.app/self-hosting/installation/docker/#creating-the-discord-application",
   "DISCORD_SECRET=",
   "DISCORD_TOKEN=",
-  "SUPER_USERS=YOUR_DISCORD_USER_ID"
+  "SUPER_USERS=YOUR_DISCORD_USER_ID",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "tickets-app"
-  port = 8_169
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "tickets-app"
+port = 8_169
+host = "${main_domain}"

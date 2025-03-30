@@ -2,16 +2,16 @@
 main_domain = "${domain}"
 
 [config]
-env = [ ]
+env = []
 
-  [[config.domains]]
-  serviceName = "glance"
-  port = 8_080
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "glance"
+port = 8_080
+host = "${main_domain}"
 
-  [[config.mounts]]
-  filePath = "/app/config/glance.yml"
-  content = """
+[[config.mounts]]
+filePath = "/app/config/glance.yml"
+content = """
 branding:
   hide-footer: true
   logo-text: P

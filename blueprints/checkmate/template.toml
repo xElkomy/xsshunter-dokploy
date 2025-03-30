@@ -2,10 +2,10 @@
 main_domain = "${domain}"
 
 [config]
-env = [ "DOMAIN=${main_domain}" ]
-mounts = [ ]
+env = ["DOMAIN=${main_domain}"]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "client"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "client"
+port = 80
+host = "${main_domain}"

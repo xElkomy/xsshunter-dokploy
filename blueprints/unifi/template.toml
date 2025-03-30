@@ -1,12 +1,12 @@
-variables = { }
+variables = {}
 
 [config]
-domains = [ ]
-env = { }
+domains = []
+env = {}
 
-  [[config.mounts]]
-  filePath = "init-mongo.sh"
-  content = """
+[[config.mounts]]
+filePath = "init-mongo.sh"
+content = """
 #!/bin/bash
 mongo <<EOF
 use unifi

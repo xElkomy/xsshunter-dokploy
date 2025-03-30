@@ -48,11 +48,11 @@ env = [
   "NEXT_PUBLIC_CAPTCHA_SITE_KEY=",
   "PLAIN_API_KEY=",
   "PLAIN_WISH_LABEL_IDS=",
-  "SSL_CLIENT_CERTIFICATE_HEADER_KEY="
+  "SSL_CLIENT_CERTIFICATE_HEADER_KEY=",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "backend"
-  port = 8_080
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "backend"
+port = 8_080
+host = "${main_domain}"

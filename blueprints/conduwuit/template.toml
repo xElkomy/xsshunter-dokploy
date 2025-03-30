@@ -5,11 +5,11 @@ registration_token = "${password:20}"
 [config]
 env = [
   "CONDUWUIT_SERVER_NAME=${main_domain}",
-  "CONDUWUIT_REGISTRATION_TOKEN=${registration_token}"
+  "CONDUWUIT_REGISTRATION_TOKEN=${registration_token}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "homeserver"
-  port = 6_167
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "homeserver"
+port = 6_167
+host = "${main_domain}"

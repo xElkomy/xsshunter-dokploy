@@ -2,10 +2,10 @@
 main_domain = "${domain}"
 
 [config]
-env = [ ]
-mounts = [ ]
+env = []
+mounts = []
 
-  [[config.domains]]
-  serviceName = "alist"
-  port = 5_244
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "alist"
+port = 5_244
+host = "${main_domain}"

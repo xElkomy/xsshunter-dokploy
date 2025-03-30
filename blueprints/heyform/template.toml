@@ -7,11 +7,11 @@ form_encryption_key = "${base64:64}"
 env = [
   "APP_HOMEPAGE_URL=http://${main_domain}",
   "SESSION_KEY=${session_key}",
-  "FORM_ENCRYPTION_KEY=${form_encryption_key}"
+  "FORM_ENCRYPTION_KEY=${form_encryption_key}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "heyform"
-  port = 8_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "heyform"
+port = 8_000
+host = "${main_domain}"

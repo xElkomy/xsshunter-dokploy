@@ -2,10 +2,10 @@
 main_domain = "${domain}"
 
 [config]
-env = { }
-mounts = [ ]
+env = {}
+mounts = []
 
-  [[config.domains]]
-  serviceName = "onedev"
-  port = 6_610
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "onedev"
+port = 6_610
+host = "${main_domain}"

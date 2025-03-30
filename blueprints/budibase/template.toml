@@ -19,11 +19,11 @@ env = [
   "BB_REDIS_PASSWORD=${redis_password}",
   "BB_WATCHTOWER_PASSWORD=${watchtower_password}",
   "BB_MINIO_ACCESS_KEY=${minio_access_key}",
-  "BB_MINIO_SECRET_KEY=${minio_secret_key}"
+  "BB_MINIO_SECRET_KEY=${minio_secret_key}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "proxy"
-  port = 10_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "proxy"
+port = 10_000
+host = "${main_domain}"

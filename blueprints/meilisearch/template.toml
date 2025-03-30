@@ -3,13 +3,13 @@ main_domain = "${domain}"
 master_key = "${base64:32}"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "meilisearch"
-  port = 7_700
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "meilisearch"
+port = 7_700
+host = "${main_domain}"
 
-  [config.env]
-  MEILI_ENV = "development"
-  MEILI_MASTER_KEY = "${master_key}"
+[config.env]
+MEILI_ENV = "development"
+MEILI_MASTER_KEY = "${master_key}"

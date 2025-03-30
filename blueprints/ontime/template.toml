@@ -2,12 +2,12 @@
 main_domain = "${domain}"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "ontime"
-  port = 4_001
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "ontime"
+port = 4_001
+host = "${main_domain}"
 
-  [config.env]
-  TZ = "UTC"
+[config.env]
+TZ = "UTC"

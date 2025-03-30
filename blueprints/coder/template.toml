@@ -8,11 +8,11 @@ env = [
   "CODER_HTTP_ADDRESS=0.0.0.0:7080",
   "POSTGRES_DB=coder",
   "POSTGRES_USER=coder",
-  "POSTGRES_PASSWORD=${postgres_password}"
+  "POSTGRES_PASSWORD=${postgres_password}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "coder"
-  port = 7_080
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "coder"
+port = 7_080
+host = "${main_domain}"

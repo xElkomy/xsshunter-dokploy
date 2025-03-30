@@ -11,11 +11,11 @@ env = [
   "AP_API_KEY=${api_key}",
   "AP_ENCRYPTION_KEY=${encryption_key}",
   "AP_JWT_SECRET=${jwt_secret}",
-  "AP_POSTGRES_PASSWORD=${postgres_password}"
+  "AP_POSTGRES_PASSWORD=${postgres_password}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "activepieces"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "activepieces"
+port = 80
+host = "${main_domain}"

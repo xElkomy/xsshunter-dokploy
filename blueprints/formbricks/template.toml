@@ -10,11 +10,11 @@ env = [
   "NEXTAUTH_URL=http://${main_domain}",
   "NEXTAUTH_SECRET=${secret_base}",
   "ENCRYPTION_KEY=${encryption_key}",
-  "CRON_SECRET=${cron_secret}"
+  "CRON_SECRET=${cron_secret}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "formbricks"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "formbricks"
+port = 3_000
+host = "${main_domain}"

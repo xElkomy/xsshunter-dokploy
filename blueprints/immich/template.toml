@@ -16,11 +16,11 @@ env = [
   "REDIS_HOSTNAME=immich-redis",
   "REDIS_PORT=6379",
   "REDIS_DBINDEX=0",
-  "TZ=UTC"
+  "TZ=UTC",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "immich-server"
-  port = 2_283
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "immich-server"
+port = 2_283
+host = "${main_domain}"

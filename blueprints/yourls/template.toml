@@ -5,16 +5,16 @@ mysql_root_password = "${password}"
 admin_password = "${password}"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "yourls-app"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "yourls-app"
+port = 80
+host = "${main_domain}"
 
-  [config.env]
-  YOURLS_HOST = "${main_domain}"
-  YOURLS_ADMIN_USER = "admin"
-  YOURLS_ADMIN_PASSWORD = "${admin_password}"
-  MYSQL_PASSWORD = "${mysql_password}"
-  MYSQL_ROOT_PASSWORD = "${mysql_root_password}"
+[config.env]
+YOURLS_HOST = "${main_domain}"
+YOURLS_ADMIN_USER = "admin"
+YOURLS_ADMIN_PASSWORD = "${admin_password}"
+MYSQL_PASSWORD = "${mysql_password}"
+MYSQL_ROOT_PASSWORD = "${mysql_root_password}"

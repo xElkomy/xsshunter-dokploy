@@ -8,11 +8,11 @@ env = [
   "TZ=Etc/UTC",
   "SUBFOLDER=/",
   "NVIDIA_VISIBLE_DEVICES=all",
-  "NVIDIA_DRIVER_CAPABILITIES=all"
+  "NVIDIA_DRIVER_CAPABILITIES=all",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "blender"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "blender"
+port = 3_000
+host = "${main_domain}"

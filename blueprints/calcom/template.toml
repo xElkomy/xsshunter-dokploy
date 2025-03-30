@@ -7,11 +7,11 @@ nextauth_secret = "${base64:32}"
 env = [
   "CALCOM_HOST=${main_domain}",
   "NEXTAUTH_SECRET=${nextauth_secret}",
-  "CALENDSO_ENCRYPTION_KEY=${calcom_encryption_key}"
+  "CALENDSO_ENCRYPTION_KEY=${calcom_encryption_key}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "calcom"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "calcom"
+port = 3_000
+host = "${main_domain}"

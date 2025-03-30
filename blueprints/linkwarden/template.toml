@@ -4,14 +4,14 @@ postgres_password = "${password}"
 next_secret = "${base64:32}"
 
 [config]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "linkwarden"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "linkwarden"
+port = 3_000
+host = "${main_domain}"
 
-  [config.env]
-  POSTGRES_PASSWORD = "${postgres_password}"
-  NEXTAUTH_SECRET = "${next_secret}"
-  NEXTAUTH_URL = "http://${main_domain}/api/v1/auth"
+[config.env]
+POSTGRES_PASSWORD = "${postgres_password}"
+NEXTAUTH_SECRET = "${next_secret}"
+NEXTAUTH_URL = "http://${main_domain}/api/v1/auth"

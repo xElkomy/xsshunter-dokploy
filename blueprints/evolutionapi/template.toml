@@ -30,11 +30,11 @@ env = [
   "CACHE_REDIS_ENABLED=true",
   "CACHE_REDIS_URI=redis://evolution-redis:6379",
   "CACHE_REDIS_PREFIX_KEY=evolution",
-  "CACHE_REDIS_SAVE_INSTANCES=true"
+  "CACHE_REDIS_SAVE_INSTANCES=true",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "evolution-api"
-  port = 8_080
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "evolution-api"
+port = 8_080
+host = "${main_domain}"

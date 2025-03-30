@@ -120,24 +120,24 @@ env = [
   "_APP_GRAPHQL_MAX_DEPTH=3",
   "_APP_MIGRATIONS_FIREBASE_CLIENT_ID=",
   "_APP_MIGRATIONS_FIREBASE_CLIENT_SECRET=",
-  "_APP_ASSISTANT_OPENAI_API_KEY="
+  "_APP_ASSISTANT_OPENAI_API_KEY=",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "appwrite"
-  port = 80
-  host = "${main_domain}"
-  path = "/"
+[[config.domains]]
+serviceName = "appwrite"
+port = 80
+host = "${main_domain}"
+path = "/"
 
-  [[config.domains]]
-  serviceName = "appwrite-console"
-  port = 80
-  host = "${main_domain}"
-  path = "/console"
+[[config.domains]]
+serviceName = "appwrite-console"
+port = 80
+host = "${main_domain}"
+path = "/console"
 
-  [[config.domains]]
-  serviceName = "appwrite-realtime"
-  port = 80
-  host = "${main_domain}"
-  path = "/v1/realtime"
+[[config.domains]]
+serviceName = "appwrite-realtime"
+port = 80
+host = "${main_domain}"
+path = "/v1/realtime"

@@ -7,11 +7,11 @@ redis_password = "${password}"
 env = [
   "DISCOURSE_HOST=${main_domain}",
   "POSTGRES_PASSWORD=${postgres_password}",
-  "REDIS_PASSWORD=${redis_password}"
+  "REDIS_PASSWORD=${redis_password}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "discourse-app"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "discourse-app"
+port = 3_000
+host = "${main_domain}"

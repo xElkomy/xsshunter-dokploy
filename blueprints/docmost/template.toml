@@ -9,11 +9,11 @@ env = [
   "POSTGRES_USER=docmost",
   "POSTGRES_PASSWORD=${postgres_password}",
   "APP_URL=http://${main_domain}:3000",
-  "APP_SECRET=${app_secret}"
+  "APP_SECRET=${app_secret}",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "docmost"
-  port = 3_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "docmost"
+port = 3_000
+host = "${main_domain}"

@@ -2,14 +2,14 @@
 main_domain = "${domain}"
 
 [config]
-  [[config.domains]]
-  serviceName = "app"
-  port = 9_000
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "app"
+port = 9_000
+host = "${main_domain}"
 
-  [[config.mounts]]
-  filePath = "config.toml"
-  content = """
+[[config.mounts]]
+filePath = "config.toml"
+content = """
 [app]
 address = "0.0.0.0:9000"
 

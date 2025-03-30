@@ -17,11 +17,11 @@ env = [
   "MAIL_HOST=",
   "MAIL_PORT=",
   "MAIL_FROM_ADDRESS=",
-  "MAIL_FROM_NAME="
+  "MAIL_FROM_NAME=",
 ]
-mounts = [ ]
+mounts = []
 
-  [[config.domains]]
-  serviceName = "all-in-one"
-  port = 80
-  host = "${main_domain}"
+[[config.domains]]
+serviceName = "all-in-one"
+port = 80
+host = "${main_domain}"

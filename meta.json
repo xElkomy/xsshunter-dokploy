@@ -2365,5 +2365,56 @@
       "Role-Based Access",
       "Document Management"
     ]
+  },
+  {
+    "id": "classicpress",
+    "name": "ClassicPress",
+    "version": "php8.3-apache",
+    "description": "ClassicPress is a community-led open source content management system for creators. It is a fork of WordPress 6.2 that preserves the TinyMCE classic editor as the default option.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/ClassicPress/",
+      "website": "https://www.classicpress.net/",
+      "docs": "https://docs.classicpress.net/"
+    },
+    "tags": [
+      "cms",
+      "wordpress",
+      "content-management"
+    ]
+  },
+  {
+    "id": "cloud9",
+    "name": "Cloud9",
+    "version": "1.29.2",
+    "description": "Cloud9 is a cloud-based integrated development environment (IDE) designed for developers to code, build, and debug applications collaboratively in real time.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/c9",
+      "website": "https://aws.amazon.com/cloud9/",
+      "docs": "https://docs.aws.amazon.com/cloud9/"
+    },
+    "tags": [
+      "ide",
+      "development",
+      "cloud"
+    ]
+  },
+  {
+    "id": "cloudcommander",
+    "name": "Cloud Commander",
+    "version": "18.5.1",
+    "description": "Cloud Commander is a file manager for the web. It includes a command-line console and a text editor. Cloud Commander helps you manage your server and work with files, directories and programs in a web browser.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/coderaiser/cloudcmd",
+      "website": "https://cloudcmd.io",
+      "docs": "https://cloudcmd.io/#install"
+    },
+    "tags": [
+      "file-manager",
+      "web-based",
+      "console"
+    ]
   }
 ]

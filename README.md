@@ -47,17 +47,20 @@ volumes:
 ```
 3. Add the `template.toml` file to the folder, this is where we specify the domains, mounts and env variables, to understand more the structure of `template.toml` you can read here [Template.toml structure](#template.toml-structure)
 
-```yaml
-variables:
-  main_domain: ${domain}
+```toml
+[variables]
+main_domain = "${domain}"
 
-config:
-  domains:
-    - serviceName: grafana
-      port: 3000
-      host: ${main_domain}
-  env: []
-  mounts: [] 
+[config]
+[[config.domains]]
+serviceName = "grafana"
+port = 3000
+host = "${main_domain}"
+
+
+[[config.env]]
+
+[[config.mounts]]
 ```
 4. Add meta information to the `meta.json` file in the root folder
 

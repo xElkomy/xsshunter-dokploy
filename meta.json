@@ -1892,5 +1892,662 @@
       "postgres",
       "admin"
     ]
+  },
+  {
+    "id": "ackee",
+    "name": "Ackee",
+    "version": "latest",
+    "description": "Ackee is a self-hosted analytics tool for your website.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/electerious/Ackee",
+      "website": "https://ackee.electerious.com/",
+      "docs": "https://docs.ackee.electerious.com/"
+    },
+    "tags": [
+      "analytics",
+      "self-hosted"
+    ]
+  },
+  {
+    "id": "adguardhome",
+    "name": "AdGuard Home",
+    "version": "latest",
+    "description": "AdGuard Home is a comprehensive solution designed to enhance your online browsing experience by eliminating all kinds of ads, from annoying banners and pop-ups to intrusive video ads. It provides privacy protection, browsing security, and parental control features while maintaining website functionality.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/AdguardTeam/AdGuardHome",
+      "website": "https://adguard.com",
+      "docs": "https://github.com/AdguardTeam/AdGuardHome/wiki"
+    },
+    "tags": [
+      "privacy",
+      "security",
+      "dns",
+      "ad-blocking"
+    ]
+  },
+  {
+    "id": "adminer",
+    "name": "Adminer",
+    "version": "4.8.1",
+    "description": "Adminer is a comprehensive database management tool that supports MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch, MongoDB and others. It provides a clean interface for efficient database operations, with strong security features and extensive customization options.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/vrana/adminer",
+      "website": "https://www.adminer.org/",
+      "docs": "https://www.adminer.org/en/plugins/"
+    },
+    "tags": [
+      "databases",
+      "developer-tools",
+      "mysql",
+      "postgresql"
+    ]
+  },
+  {
+    "id": "affinepro",
+    "name": "Affine Pro",
+    "version": "stable-780dd83",
+    "description": "Affine Pro is a modern, self-hosted platform designed for collaborative content creation and project management. It offers an intuitive interface, seamless real-time collaboration, and powerful tools for organizing tasks, notes, and ideas.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/toeverything/Affine",
+      "website": "https://affine.pro/",
+      "docs": "https://affine.pro/docs"
+    },
+    "tags": [
+      "collaboration",
+      "self-hosted",
+      "productivity",
+      "project-management"
+    ]
+  },
+  {
+    "id": "alltube",
+    "name": "AllTube",
+    "version": "latest",
+    "description": "AllTube Download is an application designed to facilitate the downloading of videos from YouTube and other video sites. It provides an HTML GUI for youtube-dl with video conversion capabilities and JSON API support.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/Rudloff/alltube",
+      "website": "https://github.com/Rudloff/alltube",
+      "docs": "https://github.com/Rudloff/alltube/wiki"
+    },
+    "tags": [
+      "media",
+      "video",
+      "downloader"
+    ]
+  },
+  {
+    "id": "ampache",
+    "name": "Ampache",
+    "version": "latest",
+    "description": "Ampache is a web-based audio/video streaming application and file manager allowing you to access your music & videos from anywhere, using almost any internet enabled device.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/ampache/ampache",
+      "website": "http://ampache.org/",
+      "docs": "https://github.com/ampache/ampache/wiki"
+    },
+    "tags": [
+      "media",
+      "music",
+      "streaming"
+    ]
+  },
+  {
+    "id": "anythingllm",
+    "name": "AnythingLLM",
+    "version": "latest",
+    "description": "AnythingLLM is a private, self-hosted, and local document chatbot platform that allows you to chat with your documents using various LLM providers.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/Mintplex-Labs/anything-llm",
+      "website": "https://useanything.com",
+      "docs": "https://github.com/Mintplex-Labs/anything-llm/tree/master/docs"
+    },
+    "tags": [
+      "ai",
+      "llm",
+      "chatbot"
+    ]
+  },
+  {
+    "id": "apprise-api",
+    "name": "Apprise API",
+    "version": "latest",
+    "description": "Apprise API provides a simple interface for sending notifications to almost all of the most popular notification services available to us today.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/caronc/apprise-api",
+      "website": "https://github.com/caronc/apprise-api",
+      "docs": "https://github.com/caronc/apprise-api/wiki"
+    },
+    "tags": [
+      "notifications",
+      "api"
+    ]
+  },
+  {
+    "id": "arangodb",
+    "name": "ArangoDB",
+    "version": "latest",
+    "description": "ArangoDB is a native multi-model database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/arangodb/arangodb",
+      "website": "https://www.arangodb.com/",
+      "docs": "https://www.arangodb.com/docs/"
+    },
+    "tags": [
+      "database",
+      "graph-database",
+      "nosql"
+    ]
+  },
+  {
+    "id": "anonupload",
+    "name": "AnonUpload",
+    "version": "1",
+    "description": "AnonUpload is a secure, anonymous file sharing application that does not require a database. It is built with privacy as a priority, ensuring that the direct filename used is not displayed.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/supernova3339/anonupload",
+      "docs": "https://github.com/Supernova3339/anonupload/blob/main/env.md"
+    },
+    "tags": [
+      "file-sharing",
+      "privacy"
+    ]
+  },
+  {
+    "id": "argilla",
+    "name": "Argilla",
+    "version": "latest",
+    "description": "Argilla is a robust platform designed to help engineers and data scientists streamline the management of machine learning data workflows. It simplifies tasks like data labeling, annotation, and quality control.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/argilla-io/argilla",
+      "website": "https://www.argilla.io/",
+      "docs": "https://docs.argilla.io/"
+    },
+    "tags": [
+      "machine-learning",
+      "data-labeling",
+      "ai"
+    ]
+  },
+  {
+    "id": "audiobookshelf",
+    "name": "Audiobookshelf",
+    "version": "2.19.4",
+    "description": "Audiobookshelf is a self-hosted server designed to manage and play your audiobooks and podcasts. It works best when you have an organized directory structure.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/advplyr/audiobookshelf",
+      "website": "https://www.audiobookshelf.org",
+      "docs": "https://www.audiobookshelf.org/docs"
+    },
+    "tags": [
+      "media",
+      "audiobooks",
+      "podcasts"
+    ]
+  },
+  {
+    "id": "authorizer",
+    "name": "Authorizer",
+    "version": "1.4.4",
+    "description": "Authorizer is a powerful tool designed to simplify the process of user authentication and authorization in your applications. It allows you to build secure apps 10x faster with its low code tool and low-cost deployment.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/authorizerdev/authorizer",
+      "website": "https://authorizer.dev",
+      "docs": "https://docs.authorizer.dev/"
+    },
+    "tags": [
+      "authentication",
+      "authorization",
+      "security"
+    ]
+  },
+  {
+    "id": "automatisch",
+    "name": "Automatisch",
+    "version": "2.0",
+    "description": "Automatisch is a powerful, self-hosted workflow automation tool designed for connecting your apps and automating repetitive tasks. With Automatisch, you can create workflows to sync data, send notifications, and perform various actions seamlessly across different services.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/automatisch/automatisch",
+      "website": "https://automatisch.io/docs",
+      "docs": "https://automatisch.io/docs"
+    },
+    "tags": [
+      "automation",
+      "workflow",
+      "integration"
+    ]
+  },
+  {
+    "id": "babybuddy",
+    "name": "BabyBuddy",
+    "version": "2.7.0",
+    "description": "BabyBuddy is a comprehensive, user-friendly platform designed to help parents and caregivers manage essential details about their child's growth and development. It provides tools for tracking feedings, sleep schedules, diaper changes, and milestones.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/babybuddy/babybuddy",
+      "website": "https://babybuddy.app",
+      "docs": "https://docs.babybuddy.app"
+    },
+    "tags": [
+      "parenting",
+      "tracking",
+      "family"
+    ]
+  },
+  {
+    "id": "baikal",
+    "name": "Baikal",
+    "version": "nginx-php8.2",
+    "description": "Baikal is a lightweight, self-hosted CalDAV and CardDAV server that enables users to manage calendars and contacts efficiently. It provides a simple and effective solution for syncing and sharing events, tasks, and address books across multiple devices.",
+    "logo": "logo.png",
+    "links": {
+      "website": "https://sabre.io/baikal/",
+      "docs": "https://sabre.io/baikal/install/"
+    },
+    "tags": [
+      "calendar",
+      "contacts",
+      "caldav",
+      "carddav"
+    ]
+  },
+  {
+    "id": "barrage",
+    "name": "Barrage",
+    "version": "0.3.0",
+    "description": "Barrage is a minimalistic Deluge WebUI app with full mobile support. It features a responsive mobile-first design, allowing you to manage your torrents with ease from any device.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/maulik9898/barrage"
+    },
+    "tags": [
+      "torrents",
+      "deluge",
+      "mobile"
+    ]
+  },
+  {
+    "id": "bazarr",
+    "name": "Bazarr",
+    "version": "latest",
+    "description": "Bazarr is a companion application to Sonarr and Radarr that manages and downloads subtitles based on your requirements.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/morpheus65535/bazarr",
+      "website": "https://www.bazarr.media/",
+      "docs": "https://www.bazarr.media/docs"
+    },
+    "tags": [
+      "subtitles",
+      "sonarr",
+      "radarr"
+    ]
+  },
+  {
+    "id":"beszel",
+    "name": "Beszel",
+    "version": "0.9.1",
+    "description": "A lightweight server monitoring hub with historical data, docker stats, and alerts.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/henrygd/beszel",
+      "website": "https://beszel.app",
+      "docs": "https://beszel.app/docs"
+    },
+    "tags": [
+      "monitoring",
+      "docker",
+      "alerts"
+    ]
+  },
+  {
+    "id": "bytestash",
+    "name": "ByteStash",
+    "version": "latest",
+    "description": "ByteStash is a self-hosted file storage solution that allows you to store and share files with ease. It provides a simple and effective solution for storing and accessing files from anywhere.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/bytestash/bytestash",
+      "website": "https://bytestash.com",
+      "docs": "https://bytestash.com/docs"
+    },
+    "tags": [
+      "file-storage",
+      "self-hosted"
+    ]
+  },
+  {
+    "id": "bookstack",
+    "name": "BookStack",
+    "version": "24.12.1",
+    "description": "BookStack is a self-hosted platform for creating beautiful, feature-rich documentation sites.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/BookStackApp/BookStack",
+      "website": "https://www.bookstackapp.com",
+      "docs": "https://www.bookstackapp.com/docs"
+    },
+    "tags": [
+      "documentation",
+      "self-hosted"
+    ]
+  },
+  {
+    "id":"bytebase",
+    "name": "Bytebase",
+    "version": "latest",
+    "description": "Bytebase is a database management tool that allows you to manage your databases with ease. It provides a simple and effective solution for managing your databases from anywhere.",
+    "logo": "image.png",
+    "links": {
+      "github": "https://github.com/bytebase/bytebase",
+      "website": "https://www.bytebase.com",
+      "docs": "https://www.bytebase.com/docs"
+    },
+    "tags": [
+      "database",
+      "self-hosted"
+    ]
+  },
+  {
+    "id":"botpress",
+    "name": "Botpress",
+    "version": "latest",
+    "description": "Botpress is a platform for building conversational AI agents. It provides a simple and effective solution for building conversational AI agents from anywhere.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/botpress/botpress",
+      "website": "https://botpress.com",
+      "docs": "https://botpress.com/docs"
+    },
+    "tags": [
+      "ai",
+      "self-hosted"
+    ]
+  },
+  {
+    "id": "calibre",
+    "name": "Calibre",
+    "version": "7.26.0",
+    "description": "Calibre is a comprehensive e-book management tool designed to organize, convert, and read your e-book collection. It supports most of the major e-book formats and is compatible with various e-book reader devices.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/kovidgoyal/calibre",
+      "website": "https://calibre-ebook.com/",
+      "docs": "https://manual.calibre-ebook.com/"
+    },
+    "tags": [
+      "Documents",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "carbone",
+    "name": "Carbone",
+    "version": "4.25.5",
+    "description": "Carbone is a high-performance, self-hosted document generation engine. It allows you to generate reports, invoices, and documents in various formats (e.g., PDF, DOCX, XLSX) using JSON data and template-based rendering.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/carboneio/carbone",
+      "website": "https://carbone.io/",
+      "docs": "https://carbone.io/documentation/design/overview/getting-started.html"
+    },
+    "tags": [
+      "Document Generation",
+      "Automation",
+      "Reporting",
+      "Productivity"
+    ]
+  },
+  {
+    "id": "changedetection",
+    "name": "Change Detection",
+    "version": "0.49",
+    "description": "Changedetection.io is an intelligent tool designed to monitor changes on websites. Perfect for smart shoppers, data journalists, research engineers, data scientists, and security researchers.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/dgtlmoon/changedetection.io",
+      "website": "https://changedetection.io",
+      "docs": "https://github.com/dgtlmoon/changedetection.io/wiki"
+    },
+    "tags": [
+      "Monitoring",
+      "Data",
+      "Notifications"
+    ]
+  },
+  {
+    "id": "chevereto",
+    "name": "Chevereto",
+    "version": "4",
+    "description": "Chevereto is a powerful, self-hosted image and video hosting platform designed for individuals, communities, and businesses. It allows users to upload, organize, and share media effortlessly.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/chevereto/chevereto",
+      "website": "https://chevereto.com/",
+      "docs": "https://v4-docs.chevereto.com/"
+    },
+    "tags": [
+      "Image Hosting",
+      "File Management",
+      "Open Source",
+      "Multi-User",
+      "Private Albums"
+    ]
+  },
+  {
+    "id": "chiefonboarding",
+    "name": "Chief-Onboarding",
+    "version": "v2.2.5",
+    "description": "Chief-Onboarding is a comprehensive, self-hosted onboarding and employee management platform designed for businesses to streamline their onboarding processes.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/chiefonboarding/chiefonboarding",
+      "website": "https://demo.chiefonboarding.com/",
+      "docs": "https://docs.chiefonboarding.com/"
+    },
+    "tags": [
+      "Employee Onboarding",
+      "HR Management",
+      "Task Tracking",
+      "Role-Based Access",
+      "Document Management"
+    ]
+  },
+  {
+    "id": "classicpress",
+    "name": "ClassicPress",
+    "version": "php8.3-apache",
+    "description": "ClassicPress is a community-led open source content management system for creators. It is a fork of WordPress 6.2 that preserves the TinyMCE classic editor as the default option.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/ClassicPress/",
+      "website": "https://www.classicpress.net/",
+      "docs": "https://docs.classicpress.net/"
+    },
+    "tags": [
+      "cms",
+      "wordpress",
+      "content-management"
+    ]
+  },
+  {
+    "id": "cloud9",
+    "name": "Cloud9",
+    "version": "1.29.2",
+    "description": "Cloud9 is a cloud-based integrated development environment (IDE) designed for developers to code, build, and debug applications collaboratively in real time.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/c9",
+      "website": "https://aws.amazon.com/cloud9/",
+      "docs": "https://docs.aws.amazon.com/cloud9/"
+    },
+    "tags": [
+      "ide",
+      "development",
+      "cloud"
+    ]
+  },
+  {
+    "id": "cloudcommander",
+    "name": "Cloud Commander",
+    "version": "18.5.1",
+    "description": "Cloud Commander is a file manager for the web. It includes a command-line console and a text editor. Cloud Commander helps you manage your server and work with files, directories and programs in a web browser.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/coderaiser/cloudcmd",
+      "website": "https://cloudcmd.io",
+      "docs": "https://cloudcmd.io/#install"
+    },
+    "tags": [
+      "file-manager",
+      "web-based",
+      "console"
+    ]
+  },
+  {
+    "id": "cockpit",
+    "name": "Cockpit",
+    "version": "core-2.11.0",
+    "description": "Cockpit is a headless content platform designed to streamline the creation, connection, and delivery of content for creators, marketers, and developers. It is built with an API-first approach, enabling limitless digital solutions.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/Cockpit-HQ",
+      "website": "https://getcockpit.com",
+      "docs": "https://getcockpit.com/documentation"
+    },
+    "tags": [
+      "cms",
+      "content-management",
+      "api"
+    ]
+  },
+  {
+    "id": "chromium",
+    "name": "Chromium",
+    "version": "5f5dd27e-ls102",
+    "description": "Chromium is an open-source browser project that is designed to provide a safer, faster, and more stable way for all users to experience the web in a containerized environment.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/linuxserver/docker-chromium",
+      "docs": "https://docs.linuxserver.io/images/docker-chromium"
+    },
+    "tags": [
+      "browser",
+      "development",
+      "web"
+    ]
+  },
+  {
+    "id": "codex-docs",
+    "name": "CodeX Docs",
+    "version": "v2.2",
+    "description": "CodeX is a comprehensive platform that brings together passionate engineers, designers, and specialists to create high-quality open-source projects. It includes Editor.js, Hawk.so, CodeX Notes, and more.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/codex-team/codex.docs",
+      "website": "https://codex.so",
+      "docs": "https://docs.codex.so"
+    },
+    "tags": [
+      "documentation",
+      "development",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "collabora-office",
+    "name": "Collabora Office",
+    "version": "latest",
+    "description": "Collabora Online is a powerful, flexible, and secure online office suite designed to break free from vendor lock-in and put you in full control of your documents.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/CollaboraOnline",
+      "website": "https://collaboraonline.com",
+      "docs": "https://sdk.collaboraonline.com/docs"
+    },
+    "tags": [
+      "office",
+      "documents",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "confluence",
+    "name": "Confluence",
+    "version": "8.6",
+    "description": "Confluence is a powerful team collaboration and knowledge-sharing tool. It allows you to create, organize, and collaborate on content in a centralized space. Designed for project management, documentation, and team communication, Confluence helps streamline workflows and enhances productivity.",
+    "links": {
+      "website": "https://confluence.atlassian.com",
+      "docs": "https://confluence.atlassian.com/doc/confluence-documentation-135922.html"
+    },
+    "logo": "logo.svg",
+    "tags": [
+      "collaboration",
+      "documentation",
+      "productivity",
+      "project-management"
+    ]
+  },
+  {
+    "id": "commento",
+    "name": "Commento",
+    "version": "v1.8.0",
+    "description": "Commento is a comments widget designed to enhance the interaction on your website. It allows your readers to contribute to the discussion by upvoting comments that add value and downvoting those that don't. The widget supports markdown formatting and provides moderation tools to manage conversations.",
+    "links": {
+      "website": "https://commento.io/",
+      "docs": "https://commento.io/",
+      "gitlab": "https://gitlab.com/commento/commento"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "comments",
+      "discussion",
+      "website"
+    ]
+  },
+  {
+    "id": "commentoplusplus",
+    "name": "Commento++",
+    "version": "v1.8.7",
+    "description": "Commento++ is a free, open-source application designed to provide a fast, lightweight comments box that you can embed in your static website. It offers features like Markdown support, Disqus import, voting, automated spam detection, moderation tools, sticky comments, thread locking, and OAuth login.",
+    "links": {
+      "github": "https://github.com/souramoo/commentoplusplus"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "comments",
+      "website",
+      "open-source"
+    ]
+  },
+  {
+    "id": "coralproject",
+    "name": "Coral",
+    "version": "9.7.0",
+    "description": "Coral is a revolutionary commenting platform designed to enhance website interactions. It features smart technology for meaningful discussions, journalist identification, moderation tools with AI support, and complete data control without ads or trackers. Used by major news sites worldwide.",
+    "links": {
+      "website": "https://coralproject.net/",
+      "docs": "https://docs.coralproject.net/",
+      "github": "https://github.com/coralproject/talk"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "communication",
+      "community",
+      "privacy"
+    ]
   }
 ]

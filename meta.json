@@ -2155,6 +2155,7 @@
     "logo": "logo.png",
     "links": {
       "website": "https://sabre.io/baikal/",
+      "github": "https://sabre.io/baikal/",
       "docs": "https://sabre.io/baikal/install/"
     },
     "tags": [

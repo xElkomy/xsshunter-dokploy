@@ -2292,5 +2292,78 @@
       "Documents",
       "E-Commerce"
     ]
+  },
+  {
+    "id": "carbone",
+    "name": "Carbone",
+    "version": "4.25.5",
+    "description": "Carbone is a high-performance, self-hosted document generation engine. It allows you to generate reports, invoices, and documents in various formats (e.g., PDF, DOCX, XLSX) using JSON data and template-based rendering.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/carboneio/carbone",
+      "website": "https://carbone.io/",
+      "docs": "https://carbone.io/documentation/design/overview/getting-started.html"
+    },
+    "tags": [
+      "Document Generation",
+      "Automation",
+      "Reporting",
+      "Productivity"
+    ]
+  },
+  {
+    "id": "changedetection",
+    "name": "Change Detection",
+    "version": "0.49",
+    "description": "Changedetection.io is an intelligent tool designed to monitor changes on websites. Perfect for smart shoppers, data journalists, research engineers, data scientists, and security researchers.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/dgtlmoon/changedetection.io",
+      "website": "https://changedetection.io",
+      "docs": "https://github.com/dgtlmoon/changedetection.io/wiki"
+    },
+    "tags": [
+      "Monitoring",
+      "Data",
+      "Notifications"
+    ]
+  },
+  {
+    "id": "chevereto",
+    "name": "Chevereto",
+    "version": "4",
+    "description": "Chevereto is a powerful, self-hosted image and video hosting platform designed for individuals, communities, and businesses. It allows users to upload, organize, and share media effortlessly.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/chevereto/chevereto",
+      "website": "https://chevereto.com/",
+      "docs": "https://v4-docs.chevereto.com/"
+    },
+    "tags": [
+      "Image Hosting",
+      "File Management",
+      "Open Source",
+      "Multi-User",
+      "Private Albums"
+    ]
+  },
+  {
+    "id": "chiefonboarding",
+    "name": "Chief-Onboarding",
+    "version": "v2.2.5",
+    "description": "Chief-Onboarding is a comprehensive, self-hosted onboarding and employee management platform designed for businesses to streamline their onboarding processes.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/chiefonboarding/chiefonboarding",
+      "website": "https://demo.chiefonboarding.com/",
+      "docs": "https://docs.chiefonboarding.com/"
+    },
+    "tags": [
+      "Employee Onboarding",
+      "HR Management",
+      "Task Tracking",
+      "Role-Based Access",
+      "Document Management"
+    ]
   }
 ]

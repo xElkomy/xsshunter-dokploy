@@ -2491,7 +2491,8 @@
     "description": "Confluence is a powerful team collaboration and knowledge-sharing tool. It allows you to create, organize, and collaborate on content in a centralized space. Designed for project management, documentation, and team communication, Confluence helps streamline workflows and enhances productivity.",
     "links": {
       "website": "https://confluence.atlassian.com",
-      "docs": "https://confluence.atlassian.com/doc/confluence-documentation-135922.html"
+      "docs": "https://confluence.atlassian.com/doc/confluence-documentation-135922.html",
+       "github": "https://confluence.atlassian.com"
     },
     "logo": "logo.svg",
     "tags": [

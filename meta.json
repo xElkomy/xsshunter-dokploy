@@ -2483,5 +2483,71 @@
       "documents",
       "collaboration"
     ]
+  },
+  {
+    "id": "confluence",
+    "name": "Confluence",
+    "version": "8.6",
+    "description": "Confluence is a powerful team collaboration and knowledge-sharing tool. It allows you to create, organize, and collaborate on content in a centralized space. Designed for project management, documentation, and team communication, Confluence helps streamline workflows and enhances productivity.",
+    "links": {
+      "website": "https://confluence.atlassian.com",
+      "docs": "https://confluence.atlassian.com/doc/confluence-documentation-135922.html"
+    },
+    "logo": "logo.svg",
+    "tags": [
+      "collaboration",
+      "documentation",
+      "productivity",
+      "project-management"
+    ]
+  },
+  {
+    "id": "commento",
+    "name": "Commento",
+    "version": "v1.8.0",
+    "description": "Commento is a comments widget designed to enhance the interaction on your website. It allows your readers to contribute to the discussion by upvoting comments that add value and downvoting those that don't. The widget supports markdown formatting and provides moderation tools to manage conversations.",
+    "links": {
+      "website": "https://commento.io/",
+      "docs": "https://commento.io/",
+      "gitlab": "https://gitlab.com/commento/commento"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "comments",
+      "discussion",
+      "website"
+    ]
+  },
+  {
+    "id": "commentoplusplus",
+    "name": "Commento++",
+    "version": "v1.8.7",
+    "description": "Commento++ is a free, open-source application designed to provide a fast, lightweight comments box that you can embed in your static website. It offers features like Markdown support, Disqus import, voting, automated spam detection, moderation tools, sticky comments, thread locking, and OAuth login.",
+    "links": {
+      "github": "https://github.com/souramoo/commentoplusplus"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "comments",
+      "website",
+      "open-source"
+    ]
+  },
+  {
+    "id": "coralproject",
+    "name": "Coral",
+    "version": "9.7.0",
+    "description": "Coral is a revolutionary commenting platform designed to enhance website interactions. It features smart technology for meaningful discussions, journalist identification, moderation tools with AI support, and complete data control without ads or trackers. Used by major news sites worldwide.",
+    "links": {
+      "website": "https://coralproject.net/",
+      "docs": "https://docs.coralproject.net/",
+      "github": "https://github.com/coralproject/talk"
+    },
+    "logo": "logo.png",
+    "tags": [
+      "communication",
+      "community",
+      "privacy"
+    ]
   }
 ]

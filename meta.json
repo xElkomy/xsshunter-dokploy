@@ -2433,5 +2433,55 @@
       "content-management",
       "api"
     ]
+  },
+  {
+    "id": "chromium",
+    "name": "Chromium",
+    "version": "5f5dd27e-ls102",
+    "description": "Chromium is an open-source browser project that is designed to provide a safer, faster, and more stable way for all users to experience the web in a containerized environment.",
+    "logo": "logo.png",
+    "links": {
+      "github": "https://github.com/linuxserver/docker-chromium",
+      "docs": "https://docs.linuxserver.io/images/docker-chromium"
+    },
+    "tags": [
+      "browser",
+      "development",
+      "web"
+    ]
+  },
+  {
+    "id": "codex-docs",
+    "name": "CodeX Docs",
+    "version": "v2.2",
+    "description": "CodeX is a comprehensive platform that brings together passionate engineers, designers, and specialists to create high-quality open-source projects. It includes Editor.js, Hawk.so, CodeX Notes, and more.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/codex-team/codex.docs",
+      "website": "https://codex.so",
+      "docs": "https://docs.codex.so"
+    },
+    "tags": [
+      "documentation",
+      "development",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "collabora-office",
+    "name": "Collabora Office",
+    "version": "latest",
+    "description": "Collabora Online is a powerful, flexible, and secure online office suite designed to break free from vendor lock-in and put you in full control of your documents.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/CollaboraOnline",
+      "website": "https://collaboraonline.com",
+      "docs": "https://sdk.collaboraonline.com/docs"
+    },
+    "tags": [
+      "office",
+      "documents",
+      "collaboration"
+    ]
   }
 ]

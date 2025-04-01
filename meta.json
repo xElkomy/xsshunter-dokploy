@@ -370,7 +370,7 @@
     "name": "Mattermost",
     "version": "9.11.6",
     "description": "A single point of collaboration. Designed specifically for digital operations.",
-    "logo": "meilisearch.png",
+    "logo": "mattermost.png",
     "links": {
       "github": "https://github.com/mattermost/mattermost",
       "website": "https://mattermost.com/",

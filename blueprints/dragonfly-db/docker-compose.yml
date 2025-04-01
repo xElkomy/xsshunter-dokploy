@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  dragonfly:
+  dragonflydb:
     image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
     ulimits:
       memlock: -1

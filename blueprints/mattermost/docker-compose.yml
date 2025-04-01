@@ -10,7 +10,7 @@ services:
       - /tmp
       - /var/run/postgresql
     volumes:
-      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
+      - mattermostDbData:/var/lib/postgresql/data
     environment:
       - TZ
       - POSTGRES_USER
@@ -25,7 +25,7 @@ services:
     security_opt:
       - no-new-privileges:true
     pids_limit: 200
-    read_only: ${MATTERMOST_CONTAINER_READONLY}
+    read_only: false
     tmpfs:
       - /tmp
     volumes:
@@ -37,7 +37,7 @@ services:
       - mattermostBleveIndexes:/mattermost/bleve-indexes:rw
       
     environment:
-      - DOMAIN=mm.example.com
+      - DOMAIN
       - TZ
       - POSTGRES_USER
       - POSTGRES_PASSWORD

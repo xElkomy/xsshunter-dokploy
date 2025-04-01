@@ -47,3 +47,20 @@ services:
       - MM_BLEVESETTINGS_INDEXDIR
       - MM_SERVICESETTINGS_SITEURL
       - APP_PORT
+
+
+volumes:
+  mattermostDbData:
+    driver: local
+  mattermostconf:
+    driver: local
+  mattermostdata:
+    driver: local
+  mattermostlogs:
+    driver: local
+  mattermostplugsin:
+    driver: local
+  mattermostclientplugins:
+    driver: local
+  mattermostBleveIndexes:
+    driver: local

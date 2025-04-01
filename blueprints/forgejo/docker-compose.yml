@@ -13,7 +13,7 @@ services:
     restart: always
 
     volumes:
-      - gitea_server:/data
+      - forgejo_server:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     depends_on:

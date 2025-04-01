@@ -4,6 +4,12 @@ my_password = "${password:32}"
 any_helper = "${uuid}"  
 
 [config]
+env = [
+    "DFDB_PASSWORD=${my_password}",
+    "DFDB_HOST=${main_domain}", 
+    "DFDB_CLUSTER_ENABLED=${randomPort}",
+    "DFDB_LOG_LEVEL=info"
+]
 
 [[config.domains]]
 serviceName = "dragonflydb"
@@ -11,12 +17,6 @@ port = 6379
 host = "${main_domain}"  
 path = "/"
 
-env = [
-    "DFDB_PASSWORD=${my_password}",
-    "DFDB_HOST=${main_domain}", 
-    "DFDB_CLUSTER_ENABLED=${randomPort}",
-    "DFDB_LOG_LEVEL=info"
-]
 
 [[config.mounts]]
 filePath = "/content/configuration.conf"

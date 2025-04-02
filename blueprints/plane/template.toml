@@ -17,6 +17,6 @@ env = [
 mounts = []
 
 [[config.domains]]
-serviceName = "mattermost"
+serviceName = "plane"
 port = 8065
 host = "${main_domain}"

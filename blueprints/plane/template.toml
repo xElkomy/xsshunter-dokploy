@@ -30,6 +30,6 @@ env = [
 mounts = []
 
 [[config.domains]]
-serviceName = "plane"
+serviceName = "web"
 port = 8065
 host = "${main_domain}"

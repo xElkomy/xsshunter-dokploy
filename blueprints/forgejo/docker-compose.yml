@@ -32,4 +32,6 @@ services:
 
 volumes:
   forgejo_db:
+    driver: local
   forgejo_server:
+    driver: local

@@ -698,6 +698,20 @@
     ]
   },
   {
+    "id": "focalboard",
+    "name": "Focalboard",
+    "version": "8.0.0",
+    "description": "Open source project management for technical teams",
+    "logo": "focalboard.png",
+    "links": {
+      "github": "https://github.com/sysblok/focalboard",
+      "website": "https://focalboard.com"
+    },
+    "tags": [
+      "kanban"
+    ]
+  },
+  {
     "id": "tolgee",
     "name": "Tolgee",
     "version": "v3.80.4",

@@ -7,7 +7,7 @@ This is the official repository for the Dokploy Open Source Templates.
 
 1. Fork the repository
 2. Create a new branch
-3. Add the template to the `blueprints` folder (docker-compose.yml, template.yml)
+3. Add the template to the `blueprints` folder (`docker-compose.yml`, `template.toml`)
 4. Add the template metadata (name, description, version, logo, links, tags) to the `meta.json` file
 5. Add the logo to the template folder
 6. Commit and push your changes

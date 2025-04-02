@@ -6,7 +6,3 @@ main_domain = "${domain}"
 serviceName = "rsshub"
 port = 1200
 host = "${main_domain}"
-
-[config.env]
-
-[[config.mounts]]

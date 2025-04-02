@@ -225,6 +225,21 @@
     ]
   },
   {
+    "id": "kestra",
+    "name": "Kestra",
+    "version": "latest",
+    "description": "Unified Orchestration Platform to Simplify Business-Critical Workflows and Govern them as Code and from the UI.",
+    "logo": "kestra.svg",
+    "links": {
+      "github": "https://github.com/kestra-io/kestra",
+      "website": "https://kestra.io",
+      "docs": "https://kestra.io/docs"
+    },
+    "tags": [
+      "automation"
+    ]
+  },
+  {
     "id": "wordpress",
     "name": "Wordpress",
     "version": "6.7.1",
@@ -2569,21 +2584,6 @@
       "rss",
       "api",
       "self-hosted"
-    ]
-  },
-  {
-    "id": "kestra",
-    "name": "Kestra",
-    "version": "0.22",
-    "description": "Unified Orchestration Platform to Simplify Business-Critical Workflows and Govern them as Code and from the UI.",
-    "logo": "kestra.svg",
-    "links": {
-      "github": "https://github.com/kestra-io/kestra",
-      "website": "https://kestra.io",
-      "docs": "https://kestra.io/docs"
-    },
-    "tags": [
-      "automation"
     ]
   }
 ]

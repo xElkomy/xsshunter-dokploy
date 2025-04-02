@@ -1,0 +1,166 @@
+services:
+  plane-redis:
+    image: valkey/valkey:8.1.0-alpine
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - redisdata:/data
+
+  plane-mq:
+    image: rabbitmq:4.0-management-alpine
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER
+      - RABBITMQ_DEFAULT_PASS
+      - RABBITMQ_DEFAULT_VHOST
+
+  plane-minio:
+    image: minio/minio
+    restart: unless-stopped
+    networks:
+      - dev_env
+    command: server /export --console-address ":9090"
+    volumes:
+      - uploads:/export
+    environment:
+      - MINIO_ROOT_USER
+      - MINIO_ROOT_PASSWORD
+
+  plane-db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    networks:
+      - dev_env
+    command: postgres -c 'max_connections=1000'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      PGDATA: /var/lib/postgresql/data
+
+  web:
+    image: makeplane/plane-space:v0.25.3
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - webdata:/app/web
+    depends_on:
+      - api
+      - worker
+
+  space:
+    image: makeplane/plane-space:v0.25.3
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - space:/app/space
+    depends_on:
+      - api
+      - worker
+      - web
+
+  admin:
+    image: makeplane/plane-admin:v0.25.3
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - admin:/app/admin
+    depends_on:
+      - api
+      - worker
+      - web
+
+  live:
+    image: makeplane/plane-live:v0.25.3
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - ./live:/app/live
+    depends_on:
+      - api
+      - worker
+      - web
+
+  api:
+    image: makeplane/plane-backend:v0.25.3
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - apiserver:/code
+    command: ./bin/docker-entrypoint-api-local.sh
+
+    depends_on:
+      - plane-db
+      - plane-redis
+
+  worker:
+    image: makeplane/plane-worker:0.11
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - apiserver:/code
+    command: ./bin/docker-entrypoint-worker.sh
+    depends_on:
+      - api
+      - plane-db
+      - plane-redis
+
+  beat-worker:
+    image: makeplane/plane-worker:0.11
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - apiserver:/code
+    command: ./bin/docker-entrypoint-beat.sh
+    depends_on:
+      - api
+      - plane-db
+      - plane-redis
+
+  migrator:
+    image: makeplane/plane-worker:0.11
+    restart: "no"
+    networks:
+      - dev_env
+    volumes:
+      - apiserver:/code
+    command: ./bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
+    depends_on:
+      - plane-db
+      - plane-redis
+
+
+volumes:
+  redisdata:
+    driver: local
+  uploads:
+    driver: local
+  pgdata:
+    driver: local
+  rabbitmq_data:
+    driver: local
+  apiserver:
+    driver: local
+  webdata:
+    driver: local
+  space:
+    driver: local
+  admin:
+    driver: local
+
+
+networks:
+  dev_env:
+    driver: bridge
+  

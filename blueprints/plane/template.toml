@@ -1,0 +1,22 @@
+[variables]
+main_domain = "${domain}"
+
+[config]
+env = [
+"Domain=${main_domain}",
+"POSTGRES_USER=mmuser",
+"POSTGRES_PASSWORD=mmuser_password",
+"POSTGRES_DB=mattermost",
+"RABBITMQ_DEFAULT_USER=plane",
+"RABBITMQ_DEFAULT_PASS=plane",
+"RABBITMQ_DEFAULT_VHOST=plane",
+"MINIO_ROOT_USER=minioaccesskey",
+"MINIO_ROOT_PASSWORD=miniorootpassword",
+"TZ=UTC",
+]
+mounts = []
+
+[[config.domains]]
+serviceName = "mattermost"
+port = 8065
+host = "${main_domain}"

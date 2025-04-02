@@ -746,6 +746,20 @@
     ]
   },
   {
+    "id": "plane",
+    "name": "Plane",
+    "version": "v0.25.3",
+    "description": "Easy, flexible, open source project management software",
+    "logo": "plane.png",
+    "links": {
+      "github": "https://github.com/makeplane/plane",
+      "website": "https://plane.so"
+    },
+    "tags": [
+      "kanban"
+    ]
+  },
+  {
     "id": "influxdb",
     "name": "InfluxDB",
     "version": "2.7.10",

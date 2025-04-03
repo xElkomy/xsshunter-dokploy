@@ -27,7 +27,7 @@ env = [
 "MINIO_ENDPOINT_SSL=0",
 "API_KEY_RATE_LIMIT=60/minute",
 "TZ=UTC",
-"APP_RELEASE=0.25.3"
+"APP_RELEASE=v0.25.3"
 ]
 mounts = []
 

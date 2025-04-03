@@ -719,7 +719,8 @@
     "logo": "focalboard.png",
     "links": {
       "github": "https://github.com/sysblok/focalboard",
-      "website": "https://focalboard.com"
+      "website": "https://focalboard.com",
+      "docs": "https://www.focalboard.com/docs/"
     },
     "tags": [
       "kanban"

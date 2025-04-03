@@ -114,7 +114,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: ../files/volumes/docker-entrypoint-api-local.sh
+    command: ./bin/docker-entrypoint-api-local.sh
     depends_on:
       - plane-db
       - plane-redis
@@ -123,7 +123,7 @@ services:
 
   worker:
     image: makeplane/plane-backend:${APP_RELEASE:-v0.25.1}
-    command: ../files/volumes/docker-entrypoint-worker.sh
+    command: ""
     volumes:
       - logs_worker:/code/plane/logs
     env_file:
@@ -140,7 +140,7 @@ services:
 
   beat-worker:
     image: makeplane/plane-backend:${APP_RELEASE:-v0.25.1}
-    command: ../files/volumes/docker-entrypoint-beat.sh
+    command: ./bin/docker-entrypoint-beat.sh
     volumes:
       - logs_beat-worker:/code/plane/logs
     env_file:
@@ -162,7 +162,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: ../files/volumes/docker-entrypoint-migrator.sh --settings=plane.settings.local
+    command: ./bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
     depends_on:
       - plane-db
       - plane-redis

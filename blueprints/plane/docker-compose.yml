@@ -48,7 +48,7 @@ services:
     environment:
       - PGDATA: /var/lib/postgresql/data
     env_file:
-    - .env
+      - .env
   web:
     image: makeplane/plane-space:v0.25.3
     restart: unless-stopped
@@ -59,8 +59,8 @@ services:
     depends_on:
       - api
       - worker
-  env_file:
-    - .env
+    env_file:
+      - .env
 
   space:
     image: makeplane/plane-space:v0.25.3
@@ -74,7 +74,7 @@ services:
       - worker
       - web
     env_file:
-    - .env
+      - .env
 
   admin:
     image: makeplane/plane-admin:v0.25.3

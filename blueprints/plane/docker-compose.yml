@@ -165,7 +165,7 @@ services:
     env_file:
       - .env
 
-  nginx:
+  proxy:
     image: "nginx:1.27.4"
     restart: unless-stopped
     networks:

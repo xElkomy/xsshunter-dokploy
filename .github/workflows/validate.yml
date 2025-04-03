@@ -53,13 +53,32 @@ jobs:
         run: |
           echo "🔍 Validating meta.json structure and required fields..."
 
+          # First check if meta.json exists and is valid JSON
+          if [ ! -f "meta.json" ]; then
+            echo "❌ meta.json file not found"
+            exit 1
+          fi
+
+          if ! jq empty meta.json 2>/dev/null; then
+            echo "❌ meta.json is not a valid JSON file"
+            exit 1
+          fi
+
           ERROR=0
+
+          # Debug: Show total number of entries
+          TOTAL_ENTRIES=$(jq '. | length' meta.json)
+          echo "📊 Total entries in meta.json: $TOTAL_ENTRIES"
 
           # Validate JSON structure and required fields
           ENTRIES=$(jq -c '.[]' meta.json)
           INDEX=0
           while IFS= read -r entry; do
             ((INDEX++))
+            echo "🔍 Checking entry #$INDEX..."
+            
+            # Debug: Show the current entry
+            echo "Current entry: $entry" | jq '.'
             
             # Validate required top-level fields
             for field in "id" "name" "version" "description" "logo" "links" "tags"; do

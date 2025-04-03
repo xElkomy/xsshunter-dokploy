@@ -165,6 +165,26 @@ services:
     env_file:
       - .env
 
+  nginx:
+    image: "nginx:1.27.4"
+    restart: unless-stopped
+    networks:
+      - dev_env
+    ports:
+      - ${NGINX_PORT}:80
+    volumes:
+      - ../files/volumes/nginx/nginx.conf.template:/etc/nginx/conf.d/default.conf
+    env_file:
+      - .env
+    environment:
+      FILE_SIZE_LIMIT: ${FILE_SIZE_LIMIT:-5242880}
+      BUCKET_NAME: ${AWS_S3_BUCKET_NAME:-uploads}
+    depends_on:
+      - web
+      - api
+      - space
+      - admin
+
 
 volumes:
   redisdata:

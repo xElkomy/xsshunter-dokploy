@@ -114,7 +114,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: bin/docker-entrypoint-api-local.sh
+    command: ../bin/docker-entrypoint-api-local.sh
     depends_on:
       - plane-db
       - plane-redis
@@ -128,7 +128,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: bin/docker-entrypoint-worker.sh
+    command: ../bin/docker-entrypoint-worker.sh
     depends_on:
       - api
       - plane-db
@@ -143,7 +143,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: bin/docker-entrypoint-beat.sh
+    command: ../bin/docker-entrypoint-beat.sh
     depends_on:
       - api
       - plane-db
@@ -158,7 +158,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
+    command: ../bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
     depends_on:
       - plane-db
       - plane-redis

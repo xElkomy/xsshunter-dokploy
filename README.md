@@ -131,7 +131,7 @@ My content
 """
 ```
 
-Important: you can reference any variable in the `domains`, `env` and `mounts` sections. just use the `${variable_name}` syntax, in the case you don't want to define a variable, you can use the `domain`, `base64`, `password`, `hash`, `uuid`, `randomPort` or `timestamp` helpers.
+Important: you can reference any variable in the `domains`, `env` and `mounts` sections. just use the `${variable_name}` syntax, in the case you don't want to define a variable, you can use the `domain`, `base64`, `password`, `hash`, `uuid`, `randomPort`, `timestamp`, `jwt`, `email`, or `username` helpers.
 
 ### Helpers
 
@@ -145,6 +145,8 @@ We have a few helpers that are very common when creating a template, these are:
 - `randomPort`: This is a helper that will generate a random port for the template.
 - `timestamp`: This is a helper that will generate a timestamp.
 - `jwt or jwt:length`: This is a helper that will generate a jwt for the template.
+- `email`: This is a helper that will generate a random email for the template.
+- `username`: This is a helper that will generate a random username in lowercase for the template.
 
 
 

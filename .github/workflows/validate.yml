@@ -49,6 +49,50 @@ jobs:
             echo "✅ Blueprint folders validated successfully."
           fi
 
+      - name: Validate meta.json structure and required fields
+        run: |
+          echo "🔍 Validating meta.json structure and required fields..."
+
+          ERROR=0
+
+          # Validate JSON structure and required fields
+          ENTRIES=$(jq -c '.[]' meta.json)
+          INDEX=0
+          while IFS= read -r entry; do
+            ((INDEX++))
+            
+            # Validate required top-level fields
+            for field in "id" "name" "version" "description" "logo" "links" "tags"; do
+              if [ "$(echo "$entry" | jq "has(\"$field\")")" != "true" ]; then
+                echo "❌ Entry #$INDEX is missing required field: $field"
+                ERROR=1
+              fi
+            done
+
+            # Validate links object required fields
+            if [ "$(echo "$entry" | jq 'has("links")')" == "true" ]; then
+              for link_field in "github" "website" "docs"; do
+                if [ "$(echo "$entry" | jq ".links | has(\"$link_field\")")" != "true" ]; then
+                  echo "❌ Entry #$INDEX: links object is missing required field: $link_field"
+                  ERROR=1
+                fi
+              done
+            fi
+
+            # Validate tags array is not empty
+            if [ "$(echo "$entry" | jq '.tags | length')" -eq 0 ]; then
+              echo "❌ Entry #$INDEX: tags array cannot be empty"
+              ERROR=1
+            fi
+          done <<< "$ENTRIES"
+
+          if [ $ERROR -eq 1 ]; then
+            echo "❌ meta.json structure validation failed."
+            exit 1
+          else
+            echo "✅ meta.json structure validated successfully."
+          fi
+
       - name: Validate meta.json matches blueprint folders and logo files
         run: |
           echo "🔍 Validating meta.json against blueprint folders and logos..."

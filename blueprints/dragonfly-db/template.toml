@@ -1,14 +1,11 @@
 [variables]
 main_domain = "${domain}"  
-my_password = "${password:32}" 
+db_password = "${password:32}" 
 any_helper = "${uuid}"  
 
 [config]
 env = [
-    "DFDB_PASSWORD=${my_password}",
-    "DFDB_HOST=${main_domain}", 
-    "DFDB_CLUSTER_ENABLED=${randomPort}",
-    "DFDB_LOG_LEVEL=info"
+    "DFLY_requirepass=${db_password}",
 ]
 
 [[config.domains]]

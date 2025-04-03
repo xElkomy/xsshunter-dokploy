@@ -1,5 +1,4 @@
-[
-  {
+[  {
     "id": "appwrite",
     "name": "Appwrite",
     "version": "1.6.0",
@@ -268,6 +267,21 @@
       "github": "https://github.com/n8n-io/n8n",
       "website": "https://n8n.io/",
       "docs": "https://docs.n8n.io/"
+    },
+    "tags": [
+      "automation"
+    ]
+  },
+  {
+    "id": "kestra",
+    "name": "Kestra",
+    "version": "latest",
+    "description": "Unified Orchestration Platform to Simplify Business-Critical Workflows and Govern them as Code and from the UI.",
+    "logo": "kestra.svg",
+    "links": {
+      "github": "https://github.com/kestra-io/kestra",
+      "website": "https://kestra.io",
+      "docs": "https://kestra.io/docs"
     },
     "tags": [
       "automation"
@@ -1636,7 +1650,8 @@
     "logo": "it-tools.svg",
     "links": {
       "github": "https://github.com/CorentinTh/it-tools",
-      "website": "https://it-tools.tech"
+      "website": "https://it-tools.tech",
+      "docs": "https://it-tools.tech/docs"
     },
     "tags": [
       "developer",
@@ -1670,7 +1685,8 @@
     "logo": "glance.png",
     "links": {
       "github": "https://github.com/glanceapp/glance",
-      "docs": "https://github.com/glanceapp/glance/blob/main/docs/configuration.md"
+      "docs": "https://github.com/glanceapp/glance/blob/main/docs/configuration.md",
+      "website": "https://glance.app/"
     },
     "tags": [
       "dashboard",
@@ -2148,7 +2164,8 @@
     "logo": "logo.png",
     "links": {
       "github": "https://github.com/supernova3339/anonupload",
-      "docs": "https://github.com/Supernova3339/anonupload/blob/main/env.md"
+      "docs": "https://github.com/Supernova3339/anonupload/blob/main/env.md",
+      "website": "https://anonupload.com/"
     },
     "tags": [
       "file-sharing",
@@ -2265,7 +2282,9 @@
     "description": "Barrage is a minimalistic Deluge WebUI app with full mobile support. It features a responsive mobile-first design, allowing you to manage your torrents with ease from any device.",
     "logo": "logo.png",
     "links": {
-      "github": "https://github.com/maulik9898/barrage"
+      "github": "https://github.com/maulik9898/barrage",
+      "website": "https://github.com/maulik9898/barrage",
+      "docs": "https://github.com/maulik9898/barrage/blob/main/README.md"
     },
     "tags": [
       "torrents",
@@ -2536,7 +2555,8 @@
     "logo": "logo.png",
     "links": {
       "github": "https://github.com/linuxserver/docker-chromium",
-      "docs": "https://docs.linuxserver.io/images/docker-chromium"
+      "docs": "https://docs.linuxserver.io/images/docker-chromium",
+      "website": "https://docs.linuxserver.io/images/docker-chromium"
     },
     "tags": [
       "browser",

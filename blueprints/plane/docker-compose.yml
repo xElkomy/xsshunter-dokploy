@@ -40,7 +40,10 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     environment:
-      PGDATA: /var/lib/postgresql/data
+      - PGDATA: /var/lib/postgresql/data
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
 
   web:
     image: makeplane/plane-space:v0.25.3
@@ -83,7 +86,7 @@ services:
     networks:
       - dev_env
     volumes:
-      - ./live:/app/live
+      - live:/app/live
     depends_on:
       - api
       - worker
@@ -157,6 +160,8 @@ volumes:
   space:
     driver: local
   admin:
+    driver: local
+  live:
     driver: local
 
 

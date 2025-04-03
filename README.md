@@ -58,7 +58,7 @@ port = 3000
 host = "${main_domain}"
 
 
-[[config.env]]
+[config.env]
 
 [[config.mounts]]
 ```

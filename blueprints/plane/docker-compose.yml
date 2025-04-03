@@ -53,7 +53,7 @@ services:
 
     
   web:
-    image: makeplane/plane-space:v0.25.3
+    image: makeplane/plane-space:${APP_RELEASE:-v0.25.3}
     restart: unless-stopped
     networks:
       - dev_env
@@ -66,7 +66,7 @@ services:
       - .env
 
   space:
-    image: makeplane/plane-space:v0.25.3
+    image: makeplane/plane-space:${APP_RELEASE:-v0.25.3}
     restart: unless-stopped
     networks:
       - dev_env
@@ -80,7 +80,7 @@ services:
       - .env
 
   admin:
-    image: makeplane/plane-admin:v0.25.3
+    image: makeplane/plane-admin:${APP_RELEASE:-v0.25.3}
     restart: unless-stopped
     networks:
       - dev_env
@@ -94,7 +94,7 @@ services:
       - .env
 
   live:
-    image: makeplane/plane-live:v0.25.3
+    image: makeplane/plane-live:${APP_RELEASE:-v0.25.3}
     restart: unless-stopped
     networks:
       - dev_env
@@ -108,13 +108,13 @@ services:
       - .env
 
   api:
-    image: makeplane/plane-backend:v0.25.3
+    image: makeplane/plane-backend:${APP_RELEASE:-v0.25.3}
     restart: unless-stopped
     networks:
       - dev_env
     volumes:
       - apiserver:/code
-    command: ../files/bin/docker-entrypoint-api-local.sh
+    command: ../files/volumes/docker-entrypoint-api-local.sh
     depends_on:
       - plane-db
       - plane-redis
@@ -122,34 +122,38 @@ services:
       - .env
 
   worker:
-    image: makeplane/plane-worker:0.11
-    restart: unless-stopped
-    networks:
-      - dev_env
+    image: makeplane/plane-backend:${APP_RELEASE:-v0.25.1}
+    command: ../files/volumes/docker-entrypoint-worker.sh
     volumes:
-      - apiserver:/code
-    command: ../files/bin/docker-entrypoint-worker.sh
+      - logs_worker:/code/plane/logs
+    env_file:
+      - .env
     depends_on:
       - api
       - plane-db
       - plane-redis
-    env_file:
-      - .env
+    healthcheck:
+      test: ["CMD", "echo", "hey whats up"]
+      interval: 2s
+      timeout: 10s
+      retries: 15
 
   beat-worker:
-    image: makeplane/plane-worker:0.11
-    restart: unless-stopped
-    networks:
-      - dev_env
+    image: makeplane/plane-backend:${APP_RELEASE:-v0.25.1}
+    command: ../files/volumes/docker-entrypoint-beat.sh
     volumes:
-      - apiserver:/code
-    command: ../files/bin/docker-entrypoint-beat.sh
+      - logs_beat-worker:/code/plane/logs
+    env_file:
+      - .env
     depends_on:
       - api
       - plane-db
       - plane-redis
-    env_file:
-      - .env
+    healthcheck:
+      test: ["CMD", "echo", "hey whats up"]
+      interval: 2s
+      timeout: 10s
+      retries: 15
 
   migrator:
     image: makeplane/plane-worker:0.11
@@ -158,7 +162,7 @@ services:
       - dev_env
     volumes:
       - apiserver:/code
-    command: ../files/bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
+    command: ../files/volumes/docker-entrypoint-migrator.sh --settings=plane.settings.local
     depends_on:
       - plane-db
       - plane-redis
@@ -166,14 +170,10 @@ services:
       - .env
 
   proxy:
-    image: "nginx:1.27.4"
+    image: "makeplane/plane-proxy:${APP_RELEASE:-v0.25.3}"
     restart: unless-stopped
     networks:
       - dev_env
-    ports:
-      - ${NGINX_PORT}:80
-    volumes:
-      - ../files/volumes/nginx/nginx.conf.template:/etc/nginx/conf.d/default.conf
     env_file:
       - .env
     environment:
@@ -184,6 +184,11 @@ services:
       - api
       - space
       - admin
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:80"]
+      interval: 2s
+      timeout: 10s
+      retries: 15
 
 
 volumes:
@@ -205,6 +210,10 @@ volumes:
     driver: local
   live:
     driver: local
+  logs_beat-worker:
+    driver: local
+  logs_worker:
+    driver: local 
 
 
 networks:

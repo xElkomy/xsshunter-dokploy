@@ -8,5 +8,7 @@ services:
       - "6379:6379"
     volumes:
       - dragonflydata:/data
+    environment: 
+      - DFLY_requirepass
 volumes:
   dragonflydata:

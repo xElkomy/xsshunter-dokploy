@@ -13,7 +13,6 @@ services:
 
   lodestone_dashboard:
     image: ghcr.io/lodestone-team/lodestone_dashboard:v0.5.1
-    container_name: lodestone_dashboard
     restart: always  
 
 volumes:

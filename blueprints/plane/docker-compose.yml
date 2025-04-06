@@ -13,10 +13,6 @@ services:
   space:
     image: makeplane/plane-space:${APP_RELEASE:-v0.25.3}
     command: node space/server.js space
-    deploy:
-      replicas: ${SPACE_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
     depends_on:
       - api
       - worker

@@ -101,10 +101,6 @@ services:
 
   plane-redis:
     image: valkey/valkey:7.2.5-alpine
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
     volumes:
       - redisdata:/data
     env_file:

@@ -3,7 +3,6 @@ version: '3.8'
 services:
   lodestone:
     image: ghcr.io/lodestone-team/lodestone_core
-    container_name: lodestone
     ports:
       - "16662:16662"
       - "25565-25590:25565-25590" 

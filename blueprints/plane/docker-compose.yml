@@ -66,10 +66,6 @@ services:
   beat-worker:
     image: makeplane/plane-backend:${APP_RELEASE:-v0.25.3}
     command: ./bin/docker-entrypoint-beat.sh
-    deploy:
-      replicas: ${BEAT_WORKER_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
     volumes:
       - logs_beat-worker:/code/plane/logs
     depends_on:

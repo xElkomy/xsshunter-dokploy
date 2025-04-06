@@ -1,7 +1,7 @@
 [variables]
-main_domain = "${domain}"  
-db_password = "${password:32}" 
-any_helper = "${uuid}"  
+main_domain = "${domain}"
+db_password = "${password:32}"
+any_helper = "${uuid}"
 
 [config]
 env = [
@@ -11,7 +11,7 @@ env = [
 [[config.domains]]
 serviceName = "dragonflydb"
 port = 6379
-host = "${main_domain}"  
+host = "${main_domain}"
 path = "/"
 
 [[config.mounts]]

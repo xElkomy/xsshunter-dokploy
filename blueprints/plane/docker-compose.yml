@@ -53,10 +53,6 @@ services:
   worker:
     image: makeplane/plane-backend:${APP_RELEASE:-v0.25.3}
     command: ./bin/docker-entrypoint-worker.sh
-    deploy:
-      replicas: ${WORKER_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
     volumes:
       - logs_worker:/code/plane/logs
     depends_on:

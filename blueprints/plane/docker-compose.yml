@@ -147,10 +147,6 @@ services:
 
   proxy:
     image: makeplane/plane-proxy:${APP_RELEASE:-v0.25.3}
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
     depends_on:
       - web
       - api

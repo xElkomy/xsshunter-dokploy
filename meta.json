@@ -2686,7 +2686,7 @@
       "self-hosted"
     ]
   },
-    {
+  {
     "id": "tailscale-exitnode",
     "name": "Tailscale Exit nodes",
     "version": "1.0.0",
@@ -2700,5 +2700,5 @@
     "tags": [
       "network"
     ]
-  },
+  }
 ]

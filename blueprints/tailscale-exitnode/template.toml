@@ -1,7 +1,5 @@
 [variables]
 main_domain = "${domain}"
-tailscale_hostname = ""
-tailscale_apikey = ""
 
 [config.env]
 TAILSCALE_HOSTNAME = "${tailscale_hostname}"

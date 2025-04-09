@@ -2,5 +2,5 @@
 main_domain = "${domain}"
 
 [config.env]
-TAILSCALE_HOSTNAME = "${tailscale_hostname}"
-TAILSCALE_APIKEY = "${tailscale_apikey}"
+TAILSCALE_HOSTNAME = ""
+TAILSCALE_APIKEY = ""

@@ -208,6 +208,21 @@
     "tags": ["database", "redis"]
   },
   {
+    "id": "stack-auth",
+    "name": "Stack Auth",
+    "version": "latest",
+    "description": "Uptime Kuma is a free and open source monitoring tool that allows you to monitor your websites and applications.",
+    "logo": "stack-auth.png",
+    "links": {
+      "github": "https://github.com/louislam/uptime-kuma",
+      "website": "https://uptime.kuma.pet/",
+      "docs": "https://github.com/louislam/uptime-kuma/wiki"
+    },
+    "tags": [
+      "monitoring"
+    ]
+  },
+  {
     "id": "uptime-kuma",
     "name": "Uptime Kuma",
     "version": "1.23.15",
@@ -648,6 +663,40 @@
       "docs": "https://docs.plane.so/"
     },
     "tags": ["kanban"]
+  },
+  {
+    "id": "pterodactyl",
+    "name": "Pterodactyl",
+    "version": "latest",
+    "description": "A free, open-source game server management panel.",
+    "logo": "pterodactyl.png",
+    "links": {
+      "github": "https://github.com/pterodactyl/panel",
+      "website": "https://pterodactyl.io",
+      "docs": "https://pterodactyl.io/project/introduction.html"
+    },
+    "tags": [
+      "self-hosted",
+      "open-source",
+      "management"
+    ]
+  },
+  {
+    "id": "pyrodactyl",
+    "name": "Pyrodactyl",
+    "version": "main",
+    "description": "Pyrodactyl is the Pterodactyl-based game server panel that's faster, smaller, safer, and more accessible than Pelican. ",
+    "logo": "pyrodactyl.png",
+    "links": {
+      "github": "https://github.com/pyrohost/pyrodactyl",
+      "website": "https://pyrodactyl.dev",
+      "docs": "https://pyrodactyl.dev/docs"
+    },
+    "tags": [
+      "self-hosted",
+      "open-source",
+      "management"
+    ]
   },
   {
     "id": "influxdb",

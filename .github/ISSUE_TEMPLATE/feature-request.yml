@@ -29,16 +29,14 @@ body:
   - type: textarea
     attributes:
       label: Resources
-      description: List the resources, technologies, frameworks, or tools included in this template
+      description: List the resources, links, or any other information that would be helpful to know about the template
       placeholder: |
-        - React 18
-        - TypeScript
-        - Tailwind CSS
-        - Vite
-        - ESLint
-        - Prettier
+        - Link to the template
+        - Link to the documentation
+        - Link to the repository
+        - Link to the website
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
@@ -47,7 +45,7 @@ body:
       placeholder: |
         This template is perfect for creating modern web applications with React and TypeScript...
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     attributes:

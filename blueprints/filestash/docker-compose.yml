@@ -2,7 +2,6 @@ version: '3.8'
 
 services:
   app:
-    container_name: filestash
     image: machines/filestash:latest
     restart: always
     environment:
@@ -17,7 +16,6 @@ services:
       - filestash:/app/data/state/
 
   wopi_server:
-    container_name: filestash_wopi
     image: collabora/code:24.04.10.2.1
     restart: always
     environment:

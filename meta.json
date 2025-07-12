@@ -2633,6 +2633,59 @@
     "tags": ["message-broker", "queue", "rabbitmq"]
   },
   {
+    "id": "zitadel",
+    "name": "Zitadel",
+    "version": "latest",
+    "description": "Open-source identity and access management platform with multi-tenancy, OpenID Connect, SAML, and OAuth 2.0 support.",
+    "logo": "zitadel.png",
+    "links": {
+      "github": "https://github.com/zitadel/zitadel",
+      "website": "https://zitadel.com/",
+      "docs": "https://zitadel.com/docs/"
+    },
+    "tags": [
+      "identity",
+      "authentication",
+      "authorization",
+      "iam",
+      "security",
+      "oauth",
+      "openid-connect",
+      "saml",
+      "multi-tenant"
+    ]
+  },
+  {
+    "id": "cyberchef",
+    "name": "CyberChef",
+    "version": "latest",
+    "description": "CyberChef is a web application for encryption, encoding, compression, and data analysis, developed by GCHQ.",
+    "logo": "cyberchef.svg",
+    "links": {
+      "github": "https://github.com/gchq/CyberChef",
+      "website": "https://gchq.github.io/CyberChef/",
+      "docs": "https://github.com/gchq/CyberChef/wiki"
+    },
+    "tags": ["security", "encryption", "data-analysis"]
+  },
+  {
+    "id": "filestash",
+    "name": "Filestash",
+    "version": "latest",
+    "description": "Filestash is the enterprise-grade file manager connecting your storage with your identity provider and authorisations.",
+    "logo": "filestash.svg",
+    "links": {
+      "github": "https://github.com/mickael-kerjean/filestash",
+      "website": "https://www.filestash.app/",
+      "docs": "https://www.filestash.app/docs/"
+    },
+    "tags": [
+      "file-manager",
+      "document-editor",
+      "self-hosted"
+    ]
+  },
+  {
     "id": "mazanoke",
     "name": "MAZANOKE",
     "version": "latest",
@@ -2662,46 +2715,6 @@
       "privacy",
       "self-hosted",
       "aggregator"
-    ]
-  },
-  {
-    "id": "zitadel",
-    "name": "Zitadel",
-    "version": "latest",
-    "description": "Open-source identity and access management platform with multi-tenancy, OpenID Connect, SAML, and OAuth 2.0 support.",
-    "logo": "zitadel.png",
-    "links": {
-      "github": "https://github.com/zitadel/zitadel",
-      "website": "https://zitadel.com/",
-      "docs": "https://zitadel.com/docs/"
-    },
-    "tags": [
-      "identity",
-      "authentication",
-      "authorization",
-      "iam",
-      "security",
-      "oauth",
-      "openid-connect",
-      "saml",
-      "multi-tenant"
-    ]
-  },
-  {
-    "id": "filestash",
-    "name": "Filestash",
-    "version": "latest",
-    "description": "Filestash is the enterprise-grade file manager connecting your storage with your identity provider and authorisations.",
-    "logo": "filestash.svg",
-    "links": {
-      "github": "https://github.com/mickael-kerjean/filestash",
-      "website": "https://www.filestash.app/",
-      "docs": "https://www.filestash.app/docs/"
-    },
-    "tags": [
-      "file-manager",
-      "document-editor",
-      "self-hosted"
     ]
   }
 ]

@@ -3139,6 +3139,19 @@
     "tags": ["analytics"]
   },
   {
+    "id": "open_notebook",
+    "name": "Open Notebook",
+    "version": "latest",
+    "description": "Open Notebook with SurrealDB for data storage and AI-powered features.",
+    "logo": "open_notebook.svg",
+    "links": {
+      "github": "https://github.com/lfnovo/open_notebook",
+      "website": "https://www.open-notebook.ai/",
+      "docs": "https://www.open-notebook.ai/get-started.html"
+    },
+    "tags": ["notebook", "ai", "database", "surrealdb"]
+  },
+  {
     "id": "booklore",
     "name": "Booklore",
     "version": "latest",

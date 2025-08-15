@@ -27,7 +27,7 @@ XSS_HOSTNAME = "xss.${admin_domain}"
 # Panel Configuration
 PANEL_LOGIN = "true"
 PANEL_USERNAME = "admin@${admin_domain}"
-PANEL_PASSWORD = "${admin_password}"
+PANEL_PASSWORD = "${admin_password}" # just to let you know takecare of the special characters, it will make your password invalid, so make a strong password without special characters
 ALLOW_EMPTY_USERPATH = "true"
 
 # OAuth Configuration (disabled by default)

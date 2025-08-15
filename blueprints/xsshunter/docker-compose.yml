@@ -68,8 +68,8 @@ services:
       SENTRY_ENABLED: ${SENTRY_ENABLED:-false}
       USE_CLOUD_STORAGE: ${USE_CLOUD_STORAGE:-false}
       BUCKET_NAME: ${BUCKET_NAME:-}
-    ports:
-      - "${APP_PORT:-8080}:8080"
+    expose:
+      - "${APP_PORT:-8080}"
     volumes:
       - payload_images:/app/payload-fire-images
     depends_on:
@@ -84,8 +84,8 @@ services:
       dockerfile: Dockerfile.trufflehog
     container_name: xsshunterexpress-trufflehog
     restart: unless-stopped
-    ports:
-      - "${TRUFFLEHOG_PORT:-8000}:8000"
+    expose:
+      - "${TRUFFLEHOG_PORT:-8000}"
     networks:
       - xsshunter-network
 

@@ -3296,24 +3296,6 @@
     ]
   },
   {
-    "id": "booklore",
-    "name": "Booklore",
-    "version": "latest",
-    "description": "Booklore is an application for managing and serving book-related data, backed by a MariaDB database.",
-    "logo": "image.png",
-    "links": {
-      "github": "https://github.com/booklore-app/BookLore",
-      "website": "https://github.com/booklore-app/BookLore",
-      "docs": "https://github.com/booklore-app/BookLore/tree/develop/docs"
-    },
-    "tags": [
-      "books",
-      "library",
-      "database",
-      "mariadb"
-    ]
-  },
-  {
     "id": "wallos",
     "name": "Wallos",
     "version": "latest",
@@ -3338,19 +3320,6 @@
     "docs": "https://docs.n8n.io/"
     },
     "tags": ["automation", "workflow", "low-code", "postgres"]
-  },
-  {
-    "id": "statping-ng",
-    "name": "Statping-NG",
-    "version": "latest",
-    "description": "Statping-NG is an easy-to-use status page for monitoring websites and applications with beautiful metrics, analytics, and health checks.",
-    "logo": "statping-ng.png",
-    "links": {
-      "github": "https://github.com/adamboutcher/statping-ng",
-      "website": "https://statping-ng.github.io/",
-      "docs": "https://statping-ng.github.io/install.html"
-    },
-    "tags": ["monitoring", "status-page"]
   }
 ]
 

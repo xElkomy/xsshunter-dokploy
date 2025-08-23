@@ -67,7 +67,7 @@ services:
       USE_CLOUD_STORAGE: ${USE_CLOUD_STORAGE:-false}
       BUCKET_NAME: ${BUCKET_NAME:-}
     expose:
-      - "${APP_PORT:-8080}"
+      - "8080"
     volumes:
       - payload_images:/app/payload-fire-images
     depends_on:

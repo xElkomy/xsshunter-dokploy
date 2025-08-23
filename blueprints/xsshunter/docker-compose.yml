@@ -3,7 +3,6 @@ version: '3.8'
 services:
   xsshunterexpress-db:
     image: postgres:15-alpine
-    container_name: xsshunterexpress-db
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-xsshunterexpress}

@@ -86,8 +86,6 @@ services:
     restart: unless-stopped
     expose:
       - "${TRUFFLEHOG_PORT:-8000}"
-    networks:
-      - xsshunter-network
 
 volumes:
   postgres_data:

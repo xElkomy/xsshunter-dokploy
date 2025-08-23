@@ -24,7 +24,6 @@ services:
 
   xsshunterexpress-service:
     build: https://github.com/rs-loves-bugs/xsshunter.git
-    container_name: xsshunterexpress-service
     restart: unless-stopped
     environment:
       # Core Configuration

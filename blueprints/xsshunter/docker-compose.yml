@@ -91,8 +91,5 @@ volumes:
   payload_images:
     driver: local
 
-networks:
-  xsshunter-network:
-    driver: bridge
 
 # xelkomy

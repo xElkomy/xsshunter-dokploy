@@ -82,7 +82,7 @@ services:
       dockerfile: Dockerfile.trufflehog
     restart: unless-stopped
     expose:
-      - "${TRUFFLEHOG_PORT:-8000}"
+      - "8000"
 
 volumes:
   postgres_data:

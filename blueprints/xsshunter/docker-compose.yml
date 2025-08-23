@@ -18,8 +18,6 @@ services:
       start_period: 30s
     volumes:
       - postgres_data:/var/lib/postgresql/data/pgdata
-    networks:
-      - xsshunter-network
 
   xsshunterexpress-service:
     build: https://github.com/rs-loves-bugs/xsshunter.git

@@ -80,7 +80,6 @@ services:
     build:
       context: https://github.com/rs-loves-bugs/xsshunter.git
       dockerfile: Dockerfile.trufflehog
-    container_name: xsshunterexpress-trufflehog
     restart: unless-stopped
     expose:
       - "${TRUFFLEHOG_PORT:-8000}"

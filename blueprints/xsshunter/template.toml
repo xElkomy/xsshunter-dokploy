@@ -27,7 +27,7 @@ XSS_HOSTNAME = "xss.${admin_domain}"
 # Panel Configuration
 PANEL_LOGIN = "true"
 PANEL_USERNAME = "admin@${admin_domain}"
-PANEL_PASSWORD = '${admin_password}' # just to let you know takecare of the special characters, it will make your password invalid, so make a strong password without special characters
+PANEL_PASSWORD = '${admin_password}' # [ use single quote to avoid the problem] just to let you know takecare of the special characters, it will make your password invalid, so make a strong password without special characters
 ALLOW_EMPTY_USERPATH = "true"
 
 # OAuth Configuration (disabled by default)
@@ -53,10 +53,11 @@ NODE_ENV = "production"
 PORT = "8080"
 CONTROL_PANEL_ENABLED = "true"
 SCREENSHOTS_DIR = "/app/payload-fire-images"
-TRUFFLEHOG_URL = "http://xsshunterexpress-trufflehog:8000/trufflehog"
+TRUFFLEHOG_URL = "http://${TRUFFLEHOG_HOST}:${TRUFFLEHOG_PORT}/trufflehog"
 
 # Port Configuration
 APP_PORT = "8080"
+TRUFFLEHOG_HOST = "xsshunterexpress-trufflehog"
 TRUFFLEHOG_PORT = "8000"
 
 # Optional Services (disabled by default)

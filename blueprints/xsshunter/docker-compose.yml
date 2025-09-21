@@ -18,8 +18,6 @@ services:
       start_period: 30s
     volumes:
       - postgres_data:/var/lib/postgresql/data/pgdata
-    networks:
-      - xsshunter-network
 
   xsshunterexpress-service:
     build: https://github.com/rs-loves-bugs/xsshunter.git
@@ -59,7 +57,7 @@ services:
       PORT: ${PORT}
       CONTROL_PANEL_ENABLED: ${CONTROL_PANEL_ENABLED:-true}
       SCREENSHOTS_DIR: /app/payload-fire-images
-      TRUFFLEHOG_URL: http://xsshunterexpress-trufflehog:8000/trufflehog
+      TRUFFLEHOG_URL: http://${TRUFFLEHOG_HOST:-xsshunterexpress-trufflehog}:${TRUFFLEHOG_PORT:-8000}/trufflehog
       
       # Optional Services
       SENTRY_DSN: ${SENTRY_DSN:-}
@@ -67,14 +65,12 @@ services:
       USE_CLOUD_STORAGE: ${USE_CLOUD_STORAGE:-false}
       BUCKET_NAME: ${BUCKET_NAME:-}
     expose:
-      - ${PORT}
+      - "8080"
     volumes:
       - payload_images:/app/payload-fire-images
     depends_on:
       xsshunterexpress-db:
         condition: service_healthy
-    networks:
-      - xsshunter-network
 
   xsshunterexpress-trufflehog:
     build:
@@ -82,15 +78,10 @@ services:
       dockerfile: Dockerfile.trufflehog
     restart: unless-stopped
     expose:
-      - ${TRUFFLEHOG_PORT}
-    networks:
-      - xsshunter-network
+      - "8000"
+
 volumes:
   postgres_data:
     driver: local
   payload_images:
     driver: local
-
-networks:
-  xsshunter-network:
-    driver: bridge

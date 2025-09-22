@@ -65,7 +65,7 @@ services:
       USE_CLOUD_STORAGE: ${USE_CLOUD_STORAGE:-false}
       BUCKET_NAME: ${BUCKET_NAME:-}
     expose:
-      - "8080"
+      - ${PORT:-8080}
     volumes:
       - payload_images:/app/payload-fire-images
     depends_on:
@@ -78,7 +78,7 @@ services:
       dockerfile: Dockerfile.trufflehog
     restart: unless-stopped
     expose:
-      - "8000"
+      - ${TRUFFLEHOG_PORT:-8000}
 
 volumes:
   postgres_data:

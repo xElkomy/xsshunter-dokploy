@@ -1,26 +1,5 @@
 [
   {
-    "id": "xsshunter",
-    "name": "XSSHunter",
-    "version": "latest",
-    "description": "XSSHunter is an open-source platform designed to identify and exploit blind Cross-Site Scripting (XSS) vulnerabilities. It provides security researchers, bug bounty hunters, and penetration testers with a comprehensive toolkit for detecting XSS flaws that are otherwise difficult to discover through traditional testing methods.",
-    "logo": "xsshunter.png",
-    "links": {
-      "github": "https://github.com/rs-loves-bugs/xsshunter",
-      "website": "https://github.com/rs-loves-bugs/xsshunter",
-      "docs": "https://github.com/rs-loves-bugs/xsshunter#requirements"
-    },
-    "tags": [
-      "pentest",
-      "xsshunter",
-      "bugbounty"
-    ]
-  },
-  {
-    "id": "autobase",
-    "name": "Autobase",
-    "version": "2.3.0",
-    "description": "Autobase for PostgreSQL® is an open-source alternative to cloud-managed databases (DBaaS) such as Amazon RDS, Google Cloud SQL, Azure Database, and more.",
     "id": "ackee",
     "name": "Ackee",
     "version": "latest",
@@ -755,6 +734,24 @@
     ]
   },
   {
+    "id": "borgitory",
+    "name": "Borgitory",
+    "version": "latest",
+    "description": "A web interface for managing BorgBackup archives. Allows browsing, mounting (via FUSE), and handling backup repositories.",
+    "logo": "image.png",
+    "links": {
+      "github": "https://github.com/mlapaglia/borgitory",
+      "website": "https://github.com/mlapaglia/borgitory",
+      "docs": "https://github.com/mlapaglia/borgitory"
+    },
+    "tags": [
+      "backup",
+      "borg",
+      "archive",
+      "self-hosted"
+    ]
+  },
+  {
     "id": "botpress",
     "name": "Botpress",
     "version": "latest",
@@ -826,7 +823,7 @@
   {
     "id": "bugsink",
     "name": "Bugsink",
-    "version": "v1.4.2",
+    "version": "latest",
     "description": "Bugsink is a self-hosted Error Tracker. Built to self-host; Sentry-SDK compatible; Scalable and reliable",
     "logo": "bugsink.png",
     "links": {
@@ -860,12 +857,12 @@
     "id": "bytestash",
     "name": "ByteStash",
     "version": "latest",
-    "description": "ByteStash is a self-hosted file storage solution that allows you to store and share files with ease. It provides a simple and effective solution for storing and accessing files from anywhere.",
+    "description": "ByteStash is a self-hosted web application designed to store, organise, and manage your code snippets efficiently. With support for creating, editing, and filtering snippets, ByteStash helps you keep track of your code in one secure place.",
     "logo": "logo.png",
     "links": {
-      "github": "https://github.com/bytestash/bytestash",
-      "website": "https://bytestash.com",
-      "docs": "https://bytestash.com/docs"
+      "github": "https://github.com/jordan-dalby/ByteStash",
+      "website": "https://github.com/jordan-dalby/ByteStash",
+      "docs": "https://github.com/jordan-dalby/ByteStash"
     },
     "tags": [
       "file-storage",
@@ -1014,6 +1011,23 @@
       "support",
       "chat",
       "customer-service"
+    ]
+  },
+  {
+    "id": "checkcle",
+    "name": "Checkcle",
+    "version": "latest",
+    "description": "Checkcle is a security and compliance tool by Operacle, providing insights into system configuration and runtime checks.",
+    "logo": "image.png",
+    "links": {
+      "github": "https://github.com/Operacle/checkcle",
+      "website": "https://operacle.com/",
+      "docs": "https://github.com/Operacle/checkcle#readme"
+    },
+    "tags": [
+      "security",
+      "compliance",
+      "monitoring"
     ]
   },
   {
@@ -1972,6 +1986,43 @@
     ]
   },
   {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "version": "latest",
+    "description": "Firecrawl is an API service that takes a URL, crawls it, and converts it into clean markdown or structured data. It can crawl all accessible subpages and provide clean data for each.",
+    "logo": "firecrawl.svg",
+    "links": {
+      "github": "https://github.com/firecrawl/firecrawl",
+      "website": "https://firecrawl.dev",
+      "docs": "https://github.com/firecrawl/firecrawl"
+    },
+    "tags": [
+      "api",
+      "crawler",
+      "scraping",
+      "data-extraction",
+      "llm"
+    ]
+  },
+  {
+    "id": "fivem",
+    "name": "FiveM Server",
+    "version": "latest",
+    "description": "A modded GTA V multiplayer server with optional txAdmin web interface for easy server management.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/spritsail/fivem",
+      "website": "https://fivem.net/",
+      "docs": "https://docs.fivem.net/docs/server-manual/"
+    },
+    "tags": [
+      "gaming",
+      "gta",
+      "multiplayer",
+      "server"
+    ]
+  },
+  {
     "id": "flagsmith",
     "name": "Flagsmith",
     "version": "2.177.1",
@@ -2005,6 +2056,44 @@
       "cloudflare",
       "bypass",
       "ddos-guard"
+    ]
+  },
+  {
+    "id": "flatnotes",
+    "name": "Flatnotes",
+    "version": "latest",
+    "description": "A self-hosted, modern note-taking web app that saves your notes as plain text Markdown files.",
+    "logo": "image.png",
+    "links": {
+      "github": "https://github.com/dullage/flatnotes",
+      "website": "https://flatnotes.io",
+      "docs": "https://github.com/dullage/flatnotes"
+    },
+    "tags": [
+      "notes",
+      "productivity",
+      "markdown",
+      "self-hosted"
+    ]
+  },
+  {
+    "id": "flatnotes-totp",
+    "name": "Flatnotes (TOTP)",
+    "version": "latest",
+    "description": "Flatnotes with TOTP authentication enabled (username + password + one-time passcode).",
+    "logo": "image.png",
+    "links": {
+      "github": "https://github.com/dullage/flatnotes",
+      "website": "https://flatnotes.io",
+      "docs": "https://github.com/dullage/flatnotes"
+    },
+    "tags": [
+      "notes",
+      "productivity",
+      "markdown",
+      "self-hosted",
+      "totp",
+      "2fa"
     ]
   },
   {
@@ -2952,6 +3041,24 @@
     ]
   },
   {
+    "id": "libretranslate",
+    "name": "LibreTranslate",
+    "version": "1.7.3",
+    "description": "LibreTranslate is a free and open-source machine translation API, powered by Argos Translate. Self-hosted, no external dependencies, and supports multiple languages.",
+    "logo": "libretranslate.svg",
+    "links": {
+      "github": "https://github.com/LibreTranslate/LibreTranslate",
+      "website": "https://libretranslate.com/",
+      "docs": "https://docs.libretranslate.com/"
+    },
+    "tags": [
+      "translation",
+      "api",
+      "nlp",
+      "language"
+    ]
+  },
+  {
     "id": "linkding",
     "name": "Linkding",
     "version": "latest",
@@ -3207,6 +3314,23 @@
     ]
   },
   {
+    "id": "mealie",
+    "name": "Mealie (sqlite version)",
+    "version": "latest",
+    "description": " Mealie is an intuitive and easy to use recipe management app. It's designed to make your life easier by being the best recipes management experience on the web and providing you with an easy to use interface to manage your growing collection of recipes. ",
+    "logo": "mealie.png",
+    "links": {
+      "github": "https://github.com/mealie-recipes/mealie",
+      "website": "https://mealie.io/",
+      "docs": "https://docs.mealie.io/"
+    },
+    "tags": [
+      "recipes",
+      "shopping-list",
+      "meal-planning"
+    ]
+  },
+  {
     "id": "meilisearch",
     "name": "Meilisearch",
     "version": "v1.8.3",
@@ -3436,7 +3560,7 @@
   {
     "id": "nocodb",
     "name": "NocoDB",
-    "version": "0.257.2",
+    "version": "latest",
     "description": "NocoDB is an opensource Airtable alternative that turns any MySQL, PostgreSQL, SQL Server, SQLite & MariaDB into a smart spreadsheet.",
     "links": {
       "github": "https://github.com/nocodb/nocodb",
@@ -3506,9 +3630,9 @@
     ]
   },
   {
-    "id": "odoo",
+    "id": "odoo_17",
     "name": "Odoo",
-    "version": "16.0",
+    "version": "17.0",
     "description": "Odoo is a free and open source business management software that helps you manage your company's operations.",
     "logo": "odoo.png",
     "links": {
@@ -3517,7 +3641,55 @@
       "docs": "https://www.odoo.com/documentation/"
     },
     "tags": [
-      "cms"
+      "erp"
+    ]
+  },
+  {
+    "id": "odoo_18",
+    "name": "Odoo",
+    "version": "18.0",
+    "description": "Odoo is a free and open source business management software that helps you manage your company's operations.",
+    "logo": "odoo.png",
+    "links": {
+      "github": "https://github.com/odoo/odoo",
+      "website": "https://odoo.com/",
+      "docs": "https://www.odoo.com/documentation/"
+    },
+    "tags": [
+      "erp"
+    ]
+  },
+  {
+    "id": "odoo_19",
+    "name": "Odoo",
+    "version": "19.0",
+    "description": "Odoo is a free and open source business management software that helps you manage your company's operations.",
+    "logo": "odoo.png",
+    "links": {
+      "github": "https://github.com/odoo/odoo",
+      "website": "https://odoo.com/",
+      "docs": "https://www.odoo.com/documentation/"
+    },
+    "tags": [
+      "erp"
+    ]
+  },
+  {
+    "id": "ojs",
+    "name": "Open Journal Systems",
+    "version": "3.3.0-21",
+    "description": "Open Journal Systems (OJS) is a journal management and publishing system that has been developed by the Public Knowledge Project through its federally funded efforts to expand and improve access to research.",
+    "logo": "ojs.svg",
+    "links": {
+      "github": "https://github.com/pkp/docker-ojs",
+      "website": "https://pkp.sfu.ca/ojs/",
+      "docs": "https://pkp.sfu.ca/ojs/docs/"
+    },
+    "tags": [
+      "publishing",
+      "journal",
+      "research",
+      "academic"
     ]
   },
   {
@@ -4141,6 +4313,23 @@
     ]
   },
   {
+    "id": "qbittorrent",
+    "name": "qBittorrent",
+    "version": "latest",
+    "description": "A free and open-source BitTorrent client with web interface for remote management. Default login: admin (check container logs for temporary password on first startup).",
+    "logo": "qbittorrent.svg",
+    "links": {
+      "github": "https://github.com/qbittorrent/qBittorrent",
+      "website": "https://www.qbittorrent.org/",
+      "docs": "https://github.com/qbittorrent/qBittorrent/wiki"
+    },
+    "tags": [
+      "torrent",
+      "download",
+      "file-sharing"
+    ]
+  },
+  {
     "id": "qdrant",
     "name": "Qdrant",
     "version": "latest",
@@ -4553,6 +4742,25 @@
     "tags": [
       "pdf",
       "tools"
+    ]
+  },
+  {
+    "id": "storyden",
+    "name": "Storyden",
+    "version": "latest",
+    "description": "With a fresh new take on traditional bulletin board forum software, Storyden is a modern, secure and extensible platform for building communities.",
+    "logo": "storyden.png",
+    "links": {
+      "github": "https://github.com/Southclaws/storyden",
+      "discord": "https://discord.gg/XF6ZBGF9XF",
+      "docs": "https://www.storyden.org/docs/introduction",
+      "website": "https://www.storyden.org/"
+    },
+    "tags": [
+      "forum",
+      "discussion",
+      "community",
+      "open-source"
     ]
   },
   {
@@ -5043,6 +5251,23 @@
     },
     "tags": [
       "cms"
+    ]
+  },
+  {
+    "id": "xsshunter",
+    "name": "XSSHunter",
+    "version": "latest",
+    "description": "XSSHunter is an open-source platform designed to identify and exploit blind Cross-Site Scripting (XSS) vulnerabilities. It provides security researchers, bug bounty hunters, and penetration testers with a comprehensive toolkit for detecting XSS flaws that are otherwise difficult to discover through traditional testing methods.",
+    "logo": "xsshunter.png",
+    "links": {
+      "github": "https://github.com/rs-loves-bugs/xsshunter",
+      "website": "https://github.com/rs-loves-bugs/xsshunter",
+      "docs": "https://github.com/rs-loves-bugs/xsshunter#requirements"
+    },
+    "tags": [
+      "pentest",
+      "xsshunter",
+      "bugbounty"
     ]
   },
   {
